@@ -1,0 +1,155 @@
+@font-face {
+  font-family: 'PostGrotesk';
+  src: url("./Fonts/PostGrotesk-Medium.eot");
+  /* IE9 Compat Modes */
+  src: url("./Fonts/PostGrotesk-Medium.eot?#iefix") format("embedded-opentype"), url("./Fonts/PostGrotesk-Medium.woff2") format("woff2"), url("./Fonts/PostGrotesk-Medium.woff") format("woff"), url("./Fonts/PostGrotesk-Medium.ttf") format("truetype"), url("./Fonts/PostGrotesk-Medium.svg") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'SourceCodePro';
+  src: url("./Fonts/SourceCodePro-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("./Fonts/SourceCodePro-Bold.eot?#iefix") format("embedded-opentype"), url("./Fonts/SourceCodePro-Bold.woff2") format("woff2"), url("./Fonts/SourceCodePro-Bold.woff") format("woff"), url("./Fonts/SourceCodePro-Bold.ttf") format("truetype"), url("./Fonts/SourceCodePro-Bold.svg") format("svg");
+  /* Legacy iOS */ }
+
+h1, h2, h3, h4, p, input, button, form, label, textarea, a {
+  font-weight: normal; }
+
+h1 {
+  font-family: 'PostGrotesk';
+  font-size: 64px;
+  line-height: 113px;
+  margin: 0;
+  color: #303030;
+  letter-spacing: 0; }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 36px;
+      line-height: 53px; } }
+
+h2 {
+  font-family: 'PostGrotesk';
+  font-size: 36px;
+  line-height: 67px;
+  margin: 0; }
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 18px;
+      line-height: 35px; } }
+
+h3 {
+  font-family: 'PostGrotesk';
+  font-size: 18px;
+  line-height: 35px;
+  margin: 0; }
+  @media (max-width: 768px) {
+    h3 {
+      font-size: 18px;
+      line-height: 26px; } }
+
+h4 {
+  font-family: 'PostGrotesk';
+  font-size: 26px;
+  line-height: 59px;
+  margin: 0;
+  color: #2C22C2; }
+  @media (max-width: 768px) {
+    h4 {
+      font-size: 18px;
+      line-height: 35px; } }
+
+h5 {
+  font-family: 'SourceCodePro';
+  font-size: 20px;
+  line-height: 25px;
+  margin: 0; }
+  @media (max-width: 768px) {
+    h5 {
+      font-size: 12px;
+      line-height: 15px; } }
+
+h6 {
+  font-family: 'SourceCodePro';
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0; }
+  @media (max-width: 768px) {
+    h6 {
+      font-size: 10px;
+      line-height: 13px; } }
+
+p {
+  font-family: 'PostGrotesk';
+  font-size: 16px;
+  line-height: 30px;
+  margin: 0;
+  letter-spacing: 0;
+  color: #303030; }
+  @media (max-width: 768px) {
+    p {
+      font-size: 13px;
+      line-height: 30px; } }
+
+a {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: 'SourceCodePro';
+  text-decoration: none;
+  outline: none;
+  transition: 0.2s all ease-out; }
+  a:hover {
+    text-decoration: none;
+    color: #4138C8; }
+  @media (max-width: 768px) {
+    a {
+      font-size: 12px;
+      line-height: 15px; } }
+
+label {
+  font-family: 'PostGrotesk'; }
+
+button {
+  font-size: 20px;
+  line-height: 20px;
+  padding: 55px 75px;
+  outline: none;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+  display: inline-block;
+  letter-spacing: 0.75px;
+  text-align: center;
+  font-family: 'SourceCodePro';
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #303030; }
+  @media (max-width: 768px) {
+    button {
+      font-size: 12px;
+      padding: 28px 55px; } }
+  button:hover {
+    background-color: #1A1A1A; }
+
+.form-control {
+  font-size: 36px;
+  line-height: 69px;
+  color: #B2B2B2;
+  padding: 22px 75px; }
+
+.text--white {
+  color: #FFFFFF; }
+
+.text--blue {
+  color: #2C22C2; }
+
+.text--black {
+  color: #303030; }
+
+.flex--grid {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  @media (max-width: 768px) {
+    .flex--grid {
+      align-items: column; } }
