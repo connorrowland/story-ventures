@@ -3,6 +3,7 @@ $DarkGray: #303030;
 $LightGray: #F7F7F7;
 $CobaltBlue: #2C22C2;
 $White: #FFFFFF;
+$Black: #000000;
 
 // Breakpoints
 $DeskLG: 1200px;
@@ -23,18 +24,13 @@ $PhoneXXS: 350px;
        url('./Fonts/PostGrotesk-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('./Fonts/PostGrotesk-Medium.svg') format('svg'); /* Legacy iOS */
 }
-@font-face {
-  font-family: 'SourceCodePro';
-  src: url('./Fonts/SourceCodePro-Bold.eot'); /* IE9 Compat Modes */
-  src: url('./Fonts/SourceCodePro-Bold.eot?#iefix') format('embedded-opentype'),
-       url('./Fonts/SourceCodePro-Bold.woff2') format('woff2'), /* Advanced Browsers */
-       url('./Fonts/SourceCodePro-Bold.woff') format('woff'), /* Modern Browsers */
-       url('./Fonts/SourceCodePro-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('./Fonts/SourceCodePro-Bold.svg') format('svg'); /* Legacy iOS */
-}
+
+// Source Code Pro
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:700');
 
 h1,h2,h3,h4,p,input,button,form,label,textarea,a {
   font-weight: normal;
+  -webkit-font-smoothing: antialiased;
 }
 
 // Fonts
@@ -86,10 +82,13 @@ h4 {
 }
 
 h5 {
-  font-family: 'SourceCodePro';
+  font-family: 'Source Code Pro', monospace;
   font-size: 20px;
   line-height: 25px;
   margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: $CobaltBlue;
   @media(max-width: $Tablet) {
     font-size: 12px;
     line-height: 15px;
@@ -97,10 +96,11 @@ h5 {
 }
 
 h6 {
-  font-family: 'SourceCodePro';
+  font-family: 'Source Code Pro', monospace;
   font-size: 14px;
   line-height: 18px;
   margin: 0;
+  letter-spacing: 0.5px;
   @media(max-width: $Tablet) {
     font-size: 10px;
     line-height: 13px;
@@ -123,13 +123,14 @@ p {
 a {
   font-size: 14px;
   line-height: 18px;
-  font-family: 'SourceCodePro';
+  font-family: 'Source Code Pro', monospace;
   text-decoration: none;
   outline: none;
   transition: 0.2s all ease-out;
+  color: $CobaltBlue;
   &:hover{
     text-decoration: none;
-    color: #4138C8;
+    color: #4239C8;
   }
   @media(max-width: $Tablet) {
     font-size: 12px;
@@ -151,7 +152,7 @@ button {
   display: inline-block;
   letter-spacing: 0.75px;
   text-align: center;
-  font-family: 'SourceCodePro';
+  font-family: 'Source Code Pro', monospace;
   border-radius: 4px;
   cursor: pointer;
   background-color: $DarkGray;
@@ -169,6 +170,11 @@ button {
   line-height: 69px;
   color: #B2B2B2;
   padding: 22px 75px;
+}
+
+.link--blue {
+  color: $CobaltBlue;
+  text-decoration: underline;
 }
 
 .text--white {
@@ -191,5 +197,43 @@ button {
   flex-wrap: wrap;
   @media(max-width: $Tablet) {
     align-items: column;
+  }
+}
+
+.flex-trio--item {
+  width: 30%;
+  @media(max-width: $Tablet) {
+    width: 100%;
+  }
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.thirds--section {
+  border-top: 10px solid $Black;
+  .thirds-section--inner {
+    display: flex;
+    flex-direction: row;
+    .thirds-section--first {
+      min-width: 33%;
+    }
+    .thirds-section--second {
+      width: 100%;
+      padding: 100px 80px;
+      background-color: $CobaltBlue;
+      .thirds-section--eyebrow {
+        color: $White;
+        line-height: 14px;
+      }
+      .thirds-section--heading {
+        color: $White;
+        font-size: 30px;
+        line-height: 30px;
+        margin-top: 20px;
+      }
+    }
   }
 }

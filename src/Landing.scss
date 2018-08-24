@@ -1,0 +1,209 @@
+@import "./Shared.scss";
+.nav--outer {
+  .nav--inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 65px;
+    .nav--logo {
+      .nav-logo--img {
+        width: 70px;
+        height: auto;
+        max-height: 110px;
+      }
+    }
+    .nav-inner--right {
+      width: 100%;
+      border-top: 5px solid $DarkGray;
+      padding-top: 25px;
+      margin: 50px 0 0 25px;
+      .nav-inner-right--links {
+        width: 315px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+#landing--header {
+  .landing-header--inner {
+    padding: 115px 0 150px 0;
+    #landing-header--future-heading {
+      margin-bottom: 120px;
+    }
+    .landing-header--link {
+      cursor: pointer;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    .landing-header--subtext {
+      margin-top: 100px;
+      max-width: 750px;
+      font-size: 22px;
+      line-height: 50px;
+    }
+  }
+}
+
+#landing--approach {
+  #landing-approach--inner {
+    #approach--black-box {
+      background-color: $Black;
+    }
+  }
+}
+
+#landing--trio {
+  .landing-trio--inner {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    .landing-trio--item {
+      padding: 90px 0 100px 95px;
+      width: 33%;
+      .landing-trio--illo {
+        width: 75px;
+        height: auto;
+        max-height: 85px;
+        margin-bottom: 50px;
+      }
+      .landing-trio--sub-heading {
+        max-width: 270px;
+        margin: 10px 0 30px 0;
+      }
+      .landing-trio--attributes {
+        .landing-trio-attributes--heading {
+          margin-bottom: 10px;
+        }
+        .landing-trio-attributes--subheading {
+          line-height: 37px;
+        }
+      }
+    }
+    .landing-trio--divider {
+      height: 180px;
+      width: 1px;
+      background-color: $Black;
+    }
+  }
+}
+
+#landing--portfolio-grid {
+  #portfolio-grid--inner {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    .portfolio-item--container {
+      border: 1px solid $Black;
+      width: 280px;
+      height: 260px;
+      position: relative;
+      margin: -1px 0 0 -1px;
+      cursor: pointer;
+      &:hover {
+        .portfolio-item--text-overlay {
+          opacity: 1 !important;
+        }
+        .portfolio-item--logo {
+          opacity: 0 !important;
+        }
+      }
+      .portfolio-item--inner {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        .portfolio-item--logo {
+          max-width: 200px;
+          height: auto;
+          min-width: 90px;
+          transition: .1s ease;
+        }
+        .portfolio-item--text-overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: .5s ease;
+          background-color: $CobaltBlue;
+          z-index: 9;
+          padding: 40px 30px;
+          h4,p,a{
+            color: $White;
+          }
+          h4 {
+            font-size: 24px;
+            line-height: 24px;
+            margin-bottom: 10px;
+          }
+          p {
+            font-size: 18px;
+            line-height: 30px;
+          }
+          a {
+            font-family: 'PostGrotesk';
+            font-size: 18px;
+          }
+          .portfolio-item--link-container {
+            width: 220px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            bottom: 40px;
+            img {
+              width: 55px;
+              height: 18px;
+            }
+          }
+        }
+      }
+      .message-banner--container {
+        position: absolute;
+        bottom: 25px;
+        width: 100%;
+        text-align: center;
+        z-index: 1;
+        .message-banner--inner {
+          border-radius: 20px;
+          height: 32px;
+          background-color: $CobaltBlue;
+          max-width: 185px;
+          margin: 0 auto;
+          h6 {
+            color: $White;
+            font-size: 11px;
+            line-height: 32px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#landing--statement {
+  min-height: 265px;
+  #statement--gray-box {
+    background-color: $LightGray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    img {
+      width: 110px;
+    }
+  }
+}

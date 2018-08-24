@@ -1,7 +1,12 @@
 {
-  "main.css": "static/css/main.c17080f1.css",
-  "main.css.map": "static/css/main.c17080f1.css.map",
-  "main.js": "static/js/main.a285be49.js",
-  "main.js.map": "static/js/main.a285be49.js.map",
-  "static/media/logo.svg": "static/media/logo.5d5d9eef.svg"
+  "main.css": "static/css/main.f6c9dedc.css",
+  "main.css.map": "static/css/main.f6c9dedc.css.map",
+  "main.js": "static/js/main.d388ed88.js",
+  "main.js.map": "static/js/main.d388ed88.js.map",
+  "static/media/PostGrotesk-Medium.eot": "static/media/PostGrotesk-Medium.6c71f773.eot",
+  "static/media/PostGrotesk-Medium.svg": "static/media/PostGrotesk-Medium.5be029f7.svg",
+  "static/media/PostGrotesk-Medium.ttf": "static/media/PostGrotesk-Medium.8259a9ad.ttf",
+  "static/media/PostGrotesk-Medium.woff": "static/media/PostGrotesk-Medium.c9c26dde.woff",
+  "static/media/PostGrotesk-Medium.woff2": "static/media/PostGrotesk-Medium.42993872.woff2",
+  "static/media/Story_Logo.png": "static/media/Story_Logo.946701e6.png"
 }
