@@ -41,6 +41,10 @@ h1 {
   margin: 0;
   color: $DarkGray;
   letter-spacing: 0;
+  @media(max-width: $TabletLG) {
+    font-size: 58px;
+    line-height: 95px;
+  }
   @media(max-width: $Tablet) {
     font-size: 36px;
     line-height: 53px;
@@ -138,10 +142,6 @@ a {
   }
 }
 
-label {
-  font-family: 'PostGrotesk';
-}
-
 button {
   font-size: 20px;
   line-height: 20px;
@@ -155,7 +155,13 @@ button {
   font-family: 'Source Code Pro', monospace;
   border-radius: 4px;
   cursor: pointer;
-  background-color: $DarkGray;
+  background-color: $Black;
+  color: $White;
+  text-transform: uppercase;
+  outline: none !important;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
   @media(max-width: $Tablet) {
     font-size: 12px;
     padding: 28px 55px;
@@ -170,6 +176,17 @@ button {
   line-height: 69px;
   color: #B2B2B2;
   padding: 22px 75px;
+  font-family: 'PostGrotesk';
+  border-radius: 0;
+  &:focus {
+    border: none;
+    color: $Black;
+    box-shadow: none;
+  }
+  @media(max-width: $Tablet) {
+    font-size: 18px;
+    line-height: 35px;
+  }
 }
 
 .link--blue {
@@ -214,9 +231,16 @@ button {
 
 .thirds--section {
   border-top: 10px solid $Black;
+  border-bottom: 1px solid $Black;
+  @media(max-width: $Tablet) {
+    border-top: 5px solid $Black;
+  }
   .thirds-section--inner {
     display: flex;
     flex-direction: row;
+    @media(max-width: $Tablet) {
+      flex-direction: column-reverse;
+    }
     .thirds-section--first {
       min-width: 33%;
     }
@@ -224,6 +248,9 @@ button {
       width: 100%;
       padding: 100px 80px;
       background-color: $CobaltBlue;
+      @media(max-width: $Tablet) {
+        padding: 60px 20px;
+      }
       .thirds-section--eyebrow {
         color: $White;
         line-height: 14px;
@@ -233,7 +260,22 @@ button {
         font-size: 30px;
         line-height: 30px;
         margin-top: 20px;
+        @media(max-width: $Tablet) {
+          font-size: 18px;
+          line-height: 35px;
+          margin-top: 5px;
+        }
       }
     }
+  }
+}
+
+.section--divider {
+  height: 180px;
+  width: 1px;
+  background-color: $Black;
+  @media(max-width: $Tablet) {
+    width: 180px;
+    height: 1px;
   }
 }
