@@ -13,7 +13,7 @@ h1, h2, h3, h4, p, input, button, form, label, textarea, a {
 h1 {
   font-family: 'PostGrotesk';
   font-size: 64px;
-  line-height: 113px;
+  line-height: 100px;
   margin: 0;
   color: #303030;
   letter-spacing: 0; }
@@ -59,12 +59,16 @@ h4 {
 
 h5 {
   font-family: 'Source Code Pro', monospace;
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 18px;
+  line-height: 22px;
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   color: #2C22C2; }
+  @media (max-width: 992px) {
+    h5 {
+      font-size: 14px;
+      line-height: 16px; } }
   @media (max-width: 768px) {
     h5 {
       font-size: 12px;
@@ -90,7 +94,7 @@ p {
   color: #303030; }
   @media (max-width: 768px) {
     p {
-      font-size: 13px;
+      font-size: 15px;
       line-height: 30px; } }
 
 a {
@@ -100,7 +104,8 @@ a {
   text-decoration: none;
   outline: none;
   transition: 0.2s all ease-out;
-  color: #2C22C2; }
+  color: #2C22C2;
+  cursor: pointer; }
   a:hover {
     text-decoration: none;
     color: #4239C8; }
@@ -134,7 +139,9 @@ button {
       font-size: 12px;
       padding: 28px 55px; } }
   button:hover {
-    background-color: #1A1A1A; }
+    background-color: #262626; }
+  button:focus {
+    background-color: #404040; }
 
 .form-control {
   font-size: 36px;
@@ -201,11 +208,14 @@ button {
       min-width: 33%; }
     .thirds--section .thirds-section--inner .thirds-section--second {
       width: 100%;
-      padding: 100px 80px;
+      padding: 80px 20px 80px 80px;
       background-color: #2C22C2; }
+      @media (max-width: 992px) {
+        .thirds--section .thirds-section--inner .thirds-section--second {
+          padding: 50px; } }
       @media (max-width: 768px) {
         .thirds--section .thirds-section--inner .thirds-section--second {
-          padding: 60px 20px; } }
+          padding: 55px 50px 45px 50px; } }
       .thirds--section .thirds-section--inner .thirds-section--second .thirds-section--eyebrow {
         color: #FFFFFF;
         line-height: 14px; }
@@ -214,6 +224,10 @@ button {
         font-size: 30px;
         line-height: 30px;
         margin-top: 20px; }
+        @media (max-width: 992px) {
+          .thirds--section .thirds-section--inner .thirds-section--second .thirds-section--heading {
+            margin-top: 15px;
+            line-height: 36px; } }
         @media (max-width: 768px) {
           .thirds--section .thirds-section--inner .thirds-section--second .thirds-section--heading {
             font-size: 18px;
@@ -228,3 +242,11 @@ button {
     .section--divider {
       width: 180px;
       height: 1px; } }
+
+@media (max-width: 768px) {
+  .hide-for-mobile {
+    display: none; } }
+
+@media (min-width: 768px) {
+  .show-for-mobile {
+    display: none; } }

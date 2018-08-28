@@ -84,7 +84,7 @@
     .nav-inner--right {
       width: 100%;
       border-top: 5px solid $DarkGray;
-      padding-top: 25px;
+      padding-top: 15px;
       margin: 50px 0 0 25px;
       @media(max-width: $Tablet){
         margin: 0 0 0 50px;
@@ -108,6 +108,9 @@
         @media(max-width: $Tablet){
           display: none;
         }
+        a {
+          font-size: 16px;
+        }
       }
     }
   }
@@ -115,12 +118,12 @@
 
 #landing--header {
   .landing-header--inner {
-    padding: 115px 0 150px 0;
+    padding: 65px 0 150px 0;
     @media(max-width: $Tablet) {
       padding: 35px 0 80px 0;
     }
     #landing-header--future-heading {
-      margin-bottom: 120px;
+      margin-bottom: 100px;
       @media(max-width: $Tablet) {
         margin-bottom: 60px;
       }
@@ -151,7 +154,7 @@
         max-width: 100%;
       }
       @media(max-width: $Tablet) {
-        font-size: 13px;
+        font-size: 15px;
         line-height: 36px;
         margin-top: 70px;
       }
@@ -189,25 +192,40 @@
               flex-direction: column;
     }
     .landing-trio--item {
-      padding: 90px 0 100px 95px;
+      padding: $PadTBMedium 0 $PadTBMedium $PadTBMedium;
       width: 33%;
+      @media(max-width: $Desk) {
+        padding: $PadTBSmall 0 $PadTBSmall $PadTBSmall;
+      }
       @media(max-width: $Tablet) {
-        padding: 50px 25px;
+        padding: 35px 25px;
         width: 100%;
       }
-      .landing-trio--illo {
-        width: 75px;
-        height: auto;
-        max-height: 85px;
+      .landing-trio--illo-container {
         margin-bottom: 50px;
+        height: 85px;
+        display: flex;
+        align-items: flex-end;
         @media(max-width: $Tablet) {
-          width: 55px;
-          max-height: 65px;
+          height: 65px;
           margin-bottom: 30px;
+        }
+        .landing-trio--illo {
+          width: 75px;
+          height: auto;
+          max-height: 85px;
+          @media(max-width: $TabletLG) {
+            width: 65px;
+            max-height: 75px;
+          }
+          @media(max-width: $Tablet) {
+            width: 55px;
+            max-height: 65px;
+          }
         }
       }
       .landing-trio--sub-heading {
-        max-width: 270px;
+        max-width: 200px;
         margin: 10px 0 30px 0;
       }
       .landing-trio--attributes {
@@ -215,7 +233,7 @@
           margin-bottom: 10px;
         }
         .landing-trio-attributes--subheading {
-          line-height: 37px;
+          line-height: 32px;
         }
       }
     }
@@ -240,8 +258,11 @@
             justify-content: flex-start;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    max-width: 1440px;
+    margin: 0 auto;
     @media(max-width: $Tablet) {
       padding: 0;
+      width: 101%;
     }
     .portfolio-item--container {
       border: 1px solid $Black;
@@ -250,13 +271,38 @@
       position: relative;
       margin: -1px 0 0 -1px;
       cursor: pointer;
+      @media(max-width: 1300px) {
+        height: 240px;
+      }
+      @media(max-width: $DeskLG) {
+        height: 220px;
+      }
+      @media(max-width: $Desk) {
+        height: 240px;
+        width: calc(25% + 1px);
+      }
+      @media(max-width: $TabletLG) {
+        height: 210px;
+      }
+      @media(max-width: 850px) {
+        width: calc(33.33% + 1px);
+        height: 245px;
+      }
       @media(max-width: $Tablet) {
-        width: 33.45%;
-        height: 225px;
+        height: 230px;
+      }
+      @media(max-width: 650px) {
+        height: 205px;
       }
       @media(max-width: $Phone) {
-        width: 50%;
-        height: 190px;
+        width: calc(50% + 1px);
+        height: 250px;
+      }
+      @media(max-width: 500px) {
+        height: 235px;
+      }
+      @media(max-width: $PhoneXS) {
+        height: 205px;
       }
       @media(max-width: $PhoneXXS) {
         height: 160px;
@@ -286,12 +332,16 @@
         width: 100%;
         height: 100%;
         .portfolio-item--logo {
-          max-width: 200px;
           height: auto;
-          min-width: 90px;
+          max-height: 40px;
+          max-width: 180px;
           -webkit-transition: .1s ease;
           -o-transition: .1s ease;
           transition: .1s ease;
+          @media(max-width: $TabletLG) {
+            max-height: 30px;
+            max-width: 140px;
+          }
           @media(max-width: $Tablet) {
             max-width: 115px;
           }
@@ -311,6 +361,9 @@
           background-color: $CobaltBlue;
           z-index: 9;
           padding: 40px 30px;
+          @media (max-width: $DeskLG) {
+            padding: 20px;
+          }
           h4,p,a{
             color: $White;
           }
@@ -318,6 +371,11 @@
             font-size: 24px;
             line-height: 24px;
             margin-bottom: 10px;
+            @media (max-width: $DeskLG) {
+              margin-bottom: 5px;
+              font-size: 20px;
+              line-height: 20px;
+            }
             @media(max-width: $Tablet) {
               font-size: 14px;
               line-height: 14px;
@@ -325,7 +383,14 @@
           }
           p {
             font-size: 18px;
-            line-height: 30px;
+            line-height: 26px;
+            @media (max-width: $DeskLG) {
+              font-size: 16px;
+            }
+            @media(max-width: $TabletLG) {
+              font-size: 14px;
+              line-height: 24px;
+            }
             @media(max-width: $Tablet) {
               font-size: 12px;
               line-height: 17px;
@@ -348,11 +413,14 @@
                 -ms-flex-pack: justify;
                     justify-content: space-between;
             position: absolute;
-            bottom: 40px;
+            bottom: 30px;
+            @media(max-width: $TabletLG) {
+              bottom: 25px;
+            }
             img {
               width: 55px;
               height: 18px;
-              margin-left: 60px;
+              margin-left: 30px;
               @media(max-width: $Tablet) {
                 width: 35px;
                 height: 10px;
@@ -374,17 +442,23 @@
           background-color: $CobaltBlue;
           max-width: 185px;
           margin: 0 auto;
+          @media(max-width: $Tablet) {
+            max-width: 165px;
+          }
           @media(max-width: $Phone) {
-            height: 20px;
+            height: 24px;
             max-width: 130px;
           }
           h6 {
             color: $White;
             font-size: 11px;
             line-height: 32px;
+            @media(max-width: $Tablet) {
+              font-size: 10px;
+            }
             @media(max-width: $Phone) {
               font-size: 8px;
-              line-height: 18px;
+              line-height: 24px;
             }
           }
         }
@@ -394,7 +468,7 @@
 }
 
 #landing--statement {
-  min-height: 265px;
+  min-height: 225px;
   #statement--gray-box {
     background-color: $LightGray;
     display: -webkit-box;
@@ -448,14 +522,13 @@
     }
     .founder-container {
       width: 49.5%;
-      padding: 90px 0 80px 90px;
+      padding: $PadTBMedium;
       @media(max-width: $Tablet) {
         padding: 50px 25px;
         width: 100%;
       }
     }
     .founder--bio {
-      max-width: 530px;
       line-height: 43px;
       margin-top: 10px;
       @media(max-width: $Tablet) {
@@ -532,6 +605,8 @@
     color: #c30a0a;
     @media(max-width: $Tablet) {
       left: 25px;
+      font-size: 13px;
+      line-height: 20px;
     }
   }
 }

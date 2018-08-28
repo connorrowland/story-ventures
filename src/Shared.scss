@@ -14,6 +14,11 @@ $Phone: 550px;
 $PhoneXS: 420px;
 $PhoneXXS: 350px;
 
+// Padding Top/Bottom
+$PadTBLarge: 90px;
+$PadTBMedium: 80px;
+$PadTBSmall: 50px;
+
 // Font Declarations
 @font-face {
   font-family: 'PostGrotesk';
@@ -37,7 +42,7 @@ h1,h2,h3,h4,p,input,button,form,label,textarea,a {
 h1 {
   font-family: 'PostGrotesk';
   font-size: 64px;
-  line-height: 113px;
+  line-height: 100px;
   margin: 0;
   color: $DarkGray;
   letter-spacing: 0;
@@ -87,12 +92,16 @@ h4 {
 
 h5 {
   font-family: 'Source Code Pro', monospace;
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 18px;
+  line-height: 22px;
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   color: $CobaltBlue;
+  @media(max-width: $TabletLG) {
+    font-size: 14px;
+    line-height: 16px;
+  }
   @media(max-width: $Tablet) {
     font-size: 12px;
     line-height: 15px;
@@ -119,7 +128,7 @@ p {
   letter-spacing: 0;
   color: $DarkGray;
   @media(max-width: $Tablet) {
-    font-size: 13px;
+    font-size: 15px;
     line-height: 30px;
   }
 }
@@ -132,6 +141,7 @@ a {
   outline: none;
   transition: 0.2s all ease-out;
   color: $CobaltBlue;
+  cursor: pointer;
   &:hover{
     text-decoration: none;
     color: #4239C8;
@@ -167,7 +177,10 @@ button {
     padding: 28px 55px;
   }
   &:hover {
-    background-color: #1A1A1A;
+    background-color: #262626;
+  }
+  &:focus {
+    background-color: #404040;
   }
 }
 
@@ -246,10 +259,13 @@ button {
     }
     .thirds-section--second {
       width: 100%;
-      padding: 100px 80px;
+      padding: $PadTBMedium 20px $PadTBMedium $PadTBMedium;
       background-color: $CobaltBlue;
+      @media(max-width: $TabletLG) {
+        padding: $PadTBSmall;
+      }
       @media(max-width: $Tablet) {
-        padding: 60px 20px;
+        padding: 55px $PadTBSmall 45px $PadTBSmall;
       }
       .thirds-section--eyebrow {
         color: $White;
@@ -260,6 +276,10 @@ button {
         font-size: 30px;
         line-height: 30px;
         margin-top: 20px;
+        @media(max-width: $TabletLG) {
+          margin-top: 15px;
+          line-height: 36px;
+        }
         @media(max-width: $Tablet) {
           font-size: 18px;
           line-height: 35px;
@@ -277,5 +297,17 @@ button {
   @media(max-width: $Tablet) {
     width: 180px;
     height: 1px;
+  }
+}
+
+.hide-for-mobile {
+  @media(max-width: $Tablet) {
+    display: none;
+  }
+}
+
+.show-for-mobile {
+  @media(min-width: $Tablet) {
+    display: none;
   }
 }

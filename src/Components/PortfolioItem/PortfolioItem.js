@@ -8,11 +8,13 @@ class PortfolioItem extends Component {
         <div className="portfolio-item--inner">
           <img src={this.props.logo} alt="Story Portfolio Logo" className="portfolio-item--logo"/>
           <div className="portfolio-item--text-overlay">
-            <h4>Ways to Cap</h4>
-            <p>Building an efficient and transparent b2b marketplace in Africa</p>
+            <h4>{this.props.companyName}</h4>
+            <p>{this.props.companyBio}</p>
             <div className="portfolio-item--link-container">
-              <a href={this.props.link}>Launch Site</a>
-              <img src={RightHandArrow} alt="Right pointed arrow" className="portfolio-item--right-arrow"/>
+              <a target="_blank" href={this.props.link}>Launch Site</a>
+              <a target="_blank" href={this.props.link}>
+                <img src={RightHandArrow} alt="Right pointed arrow" className="portfolio-item--right-arrow"/>
+              </a>
             </div>
           </div>
         </div>
