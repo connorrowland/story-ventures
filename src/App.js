@@ -48,7 +48,7 @@ class App extends Component {
                     anchor="#landing--trio"
                     additionalClasses="link--blue landing-header--link"
                     innerLink="data automation"
-                  /> is unwritten. 
+                  /> is unwritten.
                 </h1>
                 <h1>We back the <ScrollToAnchorLink
                     anchor="#landing--portfolio-grid"
@@ -84,7 +84,7 @@ class App extends Component {
               <p className="landing-trio--sub-heading">Systems that capture and understand real world data.</p>
               <div className="landing-trio--attributes">
                 <h6 className="landing-trio-attributes--heading">INCLUDES</h6>
-                <p className="landing-trio-attributes--subheading">Autonomous vehicles <br className="hide-for-mobile"/><span className="show-for-mobile">,</span> Data capture <br className="hide-for-mobile"/><span className="show-for-mobile">,</span> Robotics </p>
+                <p className="landing-trio-attributes--subheading">Autonomous vehicles<br className="hide-for-mobile"/><span className="show-for-mobile">,</span> Data capture<br className="hide-for-mobile"/><span className="show-for-mobile">,</span> Robotics </p>
               </div>
             </div>
             <div className="section--divider"></div>
@@ -96,7 +96,7 @@ class App extends Component {
               <p className="landing-trio--sub-heading">Systems that process, organize, and store data.</p>
               <div className="landing-trio--attributes">
                 <h6 className="landing-trio-attributes--heading">INCLUDES</h6>
-                <p className="landing-trio-attributes--subheading">Developer tools <br className="hide-for-mobile"/><span className="show-for-mobile">,</span> Distributed cloud <br className="hide-for-mobile"/><span className="show-for-mobile">,</span> Sensor fusion</p>
+                <p className="landing-trio-attributes--subheading">Developer tools<br className="hide-for-mobile"/><span className="show-for-mobile">,</span> Distributed cloud<br className="hide-for-mobile"/><span className="show-for-mobile">,</span> Sensor fusion</p>
               </div>
             </div>
             <div className="section--divider"></div>
@@ -108,7 +108,7 @@ class App extends Component {
               <p className="landing-trio--sub-heading">Systems that utilize and apply intelligence to data.</p>
               <div className="landing-trio--attributes">
                 <h6 className="landing-trio-attributes--heading">INCLUDES</h6>
-                <p className="landing-trio-attributes--subheading">Computer vision <br className="hide-for-mobile"/><span className="show-for-mobile">,</span> Machine learning <br className="hide-for-mobile"/><span className="show-for-mobile">,</span> Natural language </p>
+                <p className="landing-trio-attributes--subheading">Computer vision<br className="hide-for-mobile"/><span className="show-for-mobile">,</span> Machine learning<br className="hide-for-mobile"/><span className="show-for-mobile">,</span> Natural language </p>
               </div>
             </div>
           </div>
@@ -209,7 +209,7 @@ class App extends Component {
             />
             <PortfolioItem
               logo={NemedioLogo}
-              companyName="neMEDIO"
+              companyName="neMedIO"
               companyBio="Building tooling to speed up high-tech medical device development."
               link="http://nemedio.com/"
             />
