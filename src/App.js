@@ -29,6 +29,7 @@ import StaeLogo from './Images/StaeLogo.png';
 import SummerLogo from './Images/SummerLogo.png';
 import WeelLogo from './Images/WeelLogo.png';
 import WTCLogo from './Images/WTC_Logo.png';
+import InspirenLogo from './Images/InspirenLogo.png';
 
 class App extends Component {
   render() {
@@ -43,22 +44,26 @@ class App extends Component {
             <div className="col-md-12 col-sm-12 col-xs-12">
               <div className="landing-header--inner">
                 <h1 id="landing-header--future-heading">
-                  The future of <br/>
-                  <ScrollToAnchorLink
+                  The future of <ScrollToAnchorLink
                     anchor="#landing--trio"
                     additionalClasses="link--blue landing-header--link"
                     innerLink="data automation"
-                  /> is unwritten.
-                </h1>
-                <h1>We back the <ScrollToAnchorLink
+                  /> is unwritten. We back the <ScrollToAnchorLink
                     anchor="#landing--portfolio-grid"
                     additionalClasses="link--blue landing-header--link"
                     innerLink="authors"
                   />
                   .
                 </h1>
-                <p className="landing-header--subtext">We launched Story to back entrepreneurs with big ideas that leverage the creation and proliferation of data. As first check investors, we emphasize people and vision over everything else. If you're passionate the world of data, we'd love to hear from you.</p>
+                <p className="landing-header--subtext">We launched Story to back entrepreneurs with big ideas that leverage the creation and proliferation of data. As first check investors, we emphasize people and vision over everything else. If you're passionate about the world of data, we'd love to hear from you.</p>
               </div>
+            </div>
+          </div>
+          <div id="landing-header--illo-container">
+            <div id="landing-header-illo--inner">
+              <img src={InfrastructureIllo} alt="Story Illustration" className="landing-header--illo"/>
+              <img src={SensorySystemsIllo} alt="Story Illustration" className="landing-header--illo"/>
+              <img src={SoftwareIllo} alt="Story Illustration" className="landing-header--illo"/>
             </div>
           </div>
         </section>
@@ -212,6 +217,12 @@ class App extends Component {
               companyName="neMedIO"
               companyBio="Building tooling to speed up high-tech medical device development."
               link="http://nemedio.com/"
+            />
+            <PortfolioItem
+              logo={InspirenLogo}
+              companyName="Inspiren"
+              companyBio="Deploying sensors in hospitals that leverage computer vision to improve patient care."
+              link="http://inspiren.com/"
             />
           </div>
         </section>

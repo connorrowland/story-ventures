@@ -1,4 +1,12 @@
 @import "./Shared.scss";
+#landing-page {
+  background: #dee9ea;
+  padding-top: 30px;
+  @media(max-width: $Tablet){
+    padding-top: 25px;
+  }
+}
+
 .nav--outer {
   #mobile-flyout--trigger {
     display: none;
@@ -77,9 +85,9 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin: 30px 65px;
+    margin: 0 65px 30px 65px;
     @media(max-width: $Tablet){
-      margin: 25px;
+      margin: 0 25px 25px 25px;
     }
     .nav-inner--right {
       width: 100%;
@@ -117,15 +125,55 @@
 }
 
 #landing--header {
+  #landing-header--illo-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0 $PadTBSmall $PadTBSmall $PadTBSmall;
+    #landing-header-illo--inner {
+      width: 250px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      @media(max-width: $Tablet) {
+        width: 200px;
+      }
+      .landing-header--illo {
+        width: 50px;
+        max-height: 57px;
+        height: auto;
+        @media(max-width: $Tablet) {
+          width: 40px;
+          max-height: 46px;
+        }
+      }
+    }
+  }
   .landing-header--inner {
-    padding: 65px 0 150px 0;
+    padding: 65px 0 50px 0;
     @media(max-width: $Tablet) {
-      padding: 35px 0 80px 0;
+      padding: 35px 0 40px 0;
     }
     #landing-header--future-heading {
-      margin-bottom: 100px;
+      @media (max-width: $DeskLG) {
+        max-width: 700px;
+      }
       @media(max-width: $Tablet) {
-        margin-bottom: 60px;
+        max-width: 400px;
       }
     }
     .landing-header--link {
@@ -146,7 +194,7 @@
       }
     }
     .landing-header--subtext {
-      margin-top: 100px;
+      margin-top: 50px;
       max-width: 750px;
       font-size: 22px;
       line-height: 50px;
@@ -156,7 +204,7 @@
       @media(max-width: $Tablet) {
         font-size: 15px;
         line-height: 36px;
-        margin-top: 70px;
+        margin-top: 30px;
       }
     }
   }
@@ -204,8 +252,12 @@
       .landing-trio--illo-container {
         margin-bottom: 50px;
         height: 85px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: flex-end;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
         @media(max-width: $Tablet) {
           height: 65px;
           margin-bottom: 30px;
@@ -271,6 +323,7 @@
       position: relative;
       margin: -1px 0 0 -1px;
       cursor: pointer;
+      background: $White;
       @media(max-width: 1300px) {
         height: 240px;
       }
@@ -331,6 +384,9 @@
                 align-items: center;
         width: 100%;
         height: 100%;
+        #logo--Motorq {
+          max-width: 120px;
+        }
         .portfolio-item--logo {
           height: auto;
           max-height: 40px;
@@ -576,8 +632,9 @@
           -ms-flex-direction: column;
               flex-direction: column;
     }
-    input,#signup--confirmation-text {
-      padding: 27px 75px;
+    input {
+      padding: 28px 75px;
+      border: none;
       @media(max-width: $Tablet) {
         padding: 25px;
       }
@@ -594,6 +651,7 @@
   }
   #signup--confirmation-text {
     padding: 27px 75px;
+    background: $White;
     @media(max-width: $Tablet) {
       padding: 25px;
     }
@@ -617,19 +675,22 @@
     text-align: center;
     max-width: 775px;
     margin: 0 auto;
-    a,h6 {
-      text-transform: uppercase;
-    }
-    a {
-      @media(max-width: $Tablet) {
-        margin-bottom: 30px;
-      }
-    }
-    @media(max-width: $Tablet) {
+    @media(max-width: $TabletLG) {
       max-width: 300px;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
+    }
+    @media(max-width: $Tablet) {
+      max-width: 225px;
+    }
+    a,h6 {
+      text-transform: uppercase;
+    }
+    a {
+      @media(max-width: $TabletLG) {
+        margin-bottom: 30px;
+      }
     }
   }
 }

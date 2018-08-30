@@ -12,16 +12,30 @@ class ContactForm extends React.Component {
       }
     }
 
+    handleKeyPress = (e) => {
+      if (e.key === 'Enter') {
+        this.handleSubmit();
+      }
+    }
+
+    componentDidMount = () => {
+      document.addEventListener('keypress', this.handleKeyPress);
+    }
+
+    componentWillUnmount = () => {
+      document.removeEventListener('keypress', this.handleKeyPress);
+    }
+
     handleSubmit = () => {
       if (this.validateEmail()) {
         const signUpData = {
           'email': this.state.email
         }
         $.ajax({
-          url: "https://formspree.io/connor@aldenwolf.com",
+          url: "https://formspree.io/mzgnqgqx",
           method: "POST",
-          dataType: "json",
           data: signUpData,
+          dataType: "json",
           success: function(data) {
             var self = this;
             $("#signup--input-container").fadeOut(function(){

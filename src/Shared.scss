@@ -30,7 +30,7 @@ $PadTBSmall: 50px;
        url('./Fonts/PostGrotesk-Medium.svg') format('svg'); /* Legacy iOS */
 }
 
-// Source Code Pro
+// Source code pro
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:700');
 
 h1,h2,h3,h4,p,input,button,form,label,textarea,a {
@@ -139,6 +139,8 @@ a {
   font-family: 'Source Code Pro', monospace;
   text-decoration: none;
   outline: none;
+  -webkit-transition: 0.2s all ease-out;
+  -o-transition: 0.2s all ease-out;
   transition: 0.2s all ease-out;
   color: $CobaltBlue;
   cursor: pointer;
@@ -158,6 +160,8 @@ button {
   padding: 55px 75px;
   outline: none;
   text-decoration: none;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   display: inline-block;
   letter-spacing: 0.75px;
@@ -171,7 +175,8 @@ button {
   outline: none !important;
   border: none;
   border-radius: 0;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   @media(max-width: $Tablet) {
     font-size: 12px;
     padding: 28px 55px;
@@ -194,7 +199,8 @@ button {
   &:focus {
     border: none;
     color: $Black;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   @media(max-width: $Tablet) {
     font-size: 18px;
@@ -220,13 +226,25 @@ button {
 }
 
 .flex--grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   @media(max-width: $Tablet) {
-    align-items: column;
+    -webkit-box-align: column;
+        -ms-flex-align: column;
+            align-items: column;
   }
 }
 
@@ -249,10 +267,18 @@ button {
     border-top: 5px solid $Black;
   }
   .thirds-section--inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     @media(max-width: $Tablet) {
-      flex-direction: column-reverse;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse;
     }
     .thirds-section--first {
       min-width: 33%;

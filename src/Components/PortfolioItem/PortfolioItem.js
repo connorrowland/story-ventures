@@ -6,7 +6,7 @@ class PortfolioItem extends Component {
     return (
       <div className="portfolio-item--container">
         <div className="portfolio-item--inner">
-          <img src={this.props.logo} alt="Story Portfolio Logo" className="portfolio-item--logo"/>
+          <img src={this.props.logo} alt="Story Portfolio Logo" className="portfolio-item--logo" id={`logo--${this.props.companyName}`}/>
           <div className="portfolio-item--text-overlay">
             <h4>{this.props.companyName}</h4>
             <p>{this.props.companyBio}</p>
