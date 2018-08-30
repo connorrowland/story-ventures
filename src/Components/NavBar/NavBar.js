@@ -26,7 +26,7 @@ class NavBar extends Component {
           <div className="mobile-flyout--inner">
             <div className="mobile-flyout--menu">
               <img src={this.props.logo} className="nav-logo--img" alt="Story Logo" />
-              <a href="#" className="nav--logo" onClick={this.toggleMobileNavigation}>
+              <a href="#" className="nav--x-container" onClick={this.toggleMobileNavigation}>
                 <img src={XIcon} className="mobile-nav-x--img" alt="Story Logo" />
               </a>
             </div>

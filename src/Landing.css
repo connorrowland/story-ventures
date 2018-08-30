@@ -279,6 +279,7 @@ button {
 
 #landing-page {
   background: #dee9ea;
+  overflow: hidden;
   padding-top: 30px; }
   @media (max-width: 768px) {
     #landing-page {
@@ -288,7 +289,7 @@ button {
   display: none; }
   @media (max-width: 768px) {
     .nav--outer #mobile-flyout--trigger {
-      display: block; } }
+      display: inline-block; } }
 
 .nav--outer .mobile-flyout--container {
   position: absolute;
@@ -299,6 +300,9 @@ button {
   -webkit-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out; }
+  @media (min-width: 768px) {
+    .nav--outer .mobile-flyout--container {
+      display: none !important; } }
   .nav--outer .mobile-flyout--container .mobile-flyout--inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -310,8 +314,11 @@ button {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-    .nav--outer .mobile-flyout--container .mobile-flyout--inner a {
-      margin-bottom: 35px; }
+    .nav--outer .mobile-flyout--container .mobile-flyout--inner .nav--link {
+      margin-bottom: 35px;
+      width: 100%;
+      display: block;
+      text-align: center; }
     .nav--outer .mobile-flyout--container .mobile-flyout--inner .mobile-flyout--menu {
       width: 100%;
       -webkit-box-pack: justify;
@@ -323,10 +330,15 @@ button {
       -webkit-box-align: start;
       -ms-flex-align: start;
       align-items: flex-start;
-      padding: 25px; }
-    .nav--outer .mobile-flyout--container .mobile-flyout--inner .mobile-nav-x--img {
-      width: 15px;
-      height: 15px; }
+      padding: 25px;
+      position: relative; }
+    .nav--outer .mobile-flyout--container .mobile-flyout--inner .nav--x-container {
+      position: absolute;
+      right: 25px;
+      top: 30px; }
+      .nav--outer .mobile-flyout--container .mobile-flyout--inner .nav--x-container .mobile-nav-x--img {
+        width: 15px;
+        height: 15px; }
 
 .nav--outer .mobile-flyout--closed {
   top: -350px; }
@@ -337,6 +349,10 @@ button {
 .nav--outer .nav-links--container {
   position: relative;
   z-index: 0; }
+
+.nav--outer .nav--logo {
+  width: 70px;
+  display: inline-block; }
 
 .nav--outer .nav-logo--img {
   width: 70px;
@@ -360,7 +376,12 @@ button {
   margin: 0 65px 30px 65px; }
   @media (max-width: 768px) {
     .nav--outer .nav--inner {
-      margin: 0 25px 25px 25px; } }
+      margin: 0;
+      padding: 0 25px 25px 25px;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      position: relative; } }
   .nav--outer .nav--inner .nav-inner--right {
     width: 100%;
     border-top: 5px solid #303030;
@@ -368,10 +389,14 @@ button {
     margin: 50px 0 0 25px; }
     @media (max-width: 768px) {
       .nav--outer .nav--inner .nav-inner--right {
-        margin: 0 0 0 50px;
+        margin: 0;
         border: none;
         text-align: right;
-        padding-top: 5px; } }
+        padding-top: 5px;
+        display: inline;
+        width: 100%;
+        right: 25px;
+        position: absolute; } }
     .nav--outer .nav--inner .nav-inner--right .nav-inner-right--links {
       width: 315px;
       display: -webkit-box;
@@ -417,7 +442,10 @@ button {
     align-items: flex-start; }
     @media (max-width: 768px) {
       #landing--header #landing-header--illo-container #landing-header-illo--inner {
-        width: 200px; } }
+        width: 100%;
+        margin-left: 0;
+        justify-content: flex-end;
+        text-align: right; } }
     #landing--header #landing-header--illo-container #landing-header-illo--inner .landing-header--illo {
       width: 50px;
       max-height: 57px;
@@ -425,7 +453,8 @@ button {
       @media (max-width: 768px) {
         #landing--header #landing-header--illo-container #landing-header-illo--inner .landing-header--illo {
           width: 40px;
-          max-height: 46px; } }
+          max-height: 46px;
+          margin-left: 40px; } }
 
 #landing--header .landing-header--inner {
   padding: 65px 0 50px 0; }
@@ -844,10 +873,12 @@ button {
         flex-direction: column; } }
     #signup--container #signup--input-container input {
       padding: 28px 75px;
-      border: none; }
+      border: none;
+      height: 125px; }
       @media (max-width: 768px) {
         #signup--container #signup--input-container input {
-          padding: 25px; } }
+          padding: 25px;
+          height: 85px; } }
     #signup--container #signup--input-container button {
       height: 125px;
       width: 300px;

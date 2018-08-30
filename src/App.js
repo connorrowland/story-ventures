@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import * as $ from 'jquery';
+import 'normalize.css';
 import './Shared.css';
 import './Landing.css';
 import NavBar from './Components/NavBar/NavBar';
