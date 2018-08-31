@@ -22,13 +22,11 @@ import MuseLogo from './Images/MuseLogo.png';
 import NanitLogo from './Images/NanitLogo.png';
 import NemedioLogo from './Images/NemedioLogo.png';
 import NewtonLogo from './Images/NewtonLogo.png';
-import OOVALogo from './Images/OOVALogo.png';
 import PetalLogo from './Images/PetalLogo.png';
 import PinnLogo from './Images/PinnLogo.png';
 import SmileLogo from './Images/SmileLogo.png';
 import StaeLogo from './Images/StaeLogo.png';
 import SummerLogo from './Images/SummerLogo.png';
-import WeelLogo from './Images/WeelLogo.png';
 import WTCLogo from './Images/WTC_Logo.png';
 import InspirenLogo from './Images/InspirenLogo.png';
 
@@ -222,7 +220,7 @@ class App extends Component {
             <PortfolioItem
               logo={InspirenLogo}
               companyName="Inspiren"
-              companyBio="Deploying sensors in hospitals that leverage computer vision to improve patient care."
+              companyBio="Deploying intelligent sensors to help hospitals improve patient care."
               link="http://inspiren.com/"
             />
           </div>

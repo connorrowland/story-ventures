@@ -35,7 +35,6 @@ class NavBar extends Component {
               innerLink="PORTFOLIO"
               additionalClasses="nav--link"
             />
-            <a href="/" className="nav--link">SERVICE PROVIDERS</a>
           </div>
         </div>
 
@@ -51,7 +50,6 @@ class NavBar extends Component {
                   innerLink="PORTFOLIO"
                   additionalClasses="nav--link"
                 />
-                <a href="/" className="nav--link">SERVICE PROVIDERS</a>
               </div>
               <a href="/" className="nav--link" id="mobile-flyout--trigger" onClick={this.toggleMobileNavigation}>MENU</a>
             </div>

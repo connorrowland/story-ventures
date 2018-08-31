@@ -12,8 +12,8 @@ h1, h2, h3, h4, p, input, button, form, label, textarea, a {
 
 h1 {
   font-family: 'PostGrotesk';
-  font-size: 64px;
-  line-height: 100px;
+  font-size: 60px;
+  line-height: 90px;
   margin: 0;
   color: #303030;
   letter-spacing: 0; }
@@ -280,10 +280,7 @@ button {
 #landing-page {
   background: #dee9ea;
   overflow: hidden;
-  padding-top: 30px; }
-  @media (max-width: 768px) {
-    #landing-page {
-      padding-top: 25px; } }
+  padding-top: 25px; }
 
 .nav--outer #mobile-flyout--trigger {
   display: none; }
@@ -373,7 +370,7 @@ button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 0 65px 30px 65px; }
+  padding: 0 65px 25px 65px; }
   @media (max-width: 768px) {
     .nav--outer .nav--inner {
       margin: 0;
@@ -398,23 +395,14 @@ button {
         right: 25px;
         position: absolute; } }
     .nav--outer .nav--inner .nav-inner--right .nav-inner-right--links {
-      width: 315px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
+      text-align: right;
       margin-left: auto; }
       @media (max-width: 768px) {
         .nav--outer .nav--inner .nav-inner--right .nav-inner-right--links {
           display: none; } }
       .nav--outer .nav--inner .nav-inner--right .nav-inner-right--links a {
-        font-size: 16px; }
+        font-size: 16px;
+        margin-left: 70px; }
 
 #landing--header #landing-header--illo-container {
   width: 100%;
@@ -444,6 +432,8 @@ button {
       #landing--header #landing-header--illo-container #landing-header-illo--inner {
         width: 100%;
         margin-left: 0;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
         justify-content: flex-end;
         text-align: right; } }
     #landing--header #landing-header--illo-container #landing-header-illo--inner .landing-header--illo {
@@ -457,7 +447,10 @@ button {
           margin-left: 40px; } }
 
 #landing--header .landing-header--inner {
-  padding: 65px 0 50px 0; }
+  padding: 65px 0 40px 0; }
+  @media (max-width: 1100px) {
+    #landing--header .landing-header--inner {
+      padding: 40px 0 40px 0; } }
   @media (max-width: 768px) {
     #landing--header .landing-header--inner {
       padding: 35px 0 40px 0; } }
@@ -470,8 +463,8 @@ button {
   #landing--header .landing-header--inner .landing-header--link {
     cursor: pointer;
     font-family: 'PostGrotesk' !important;
-    font-size: 64px;
-    line-height: 113px; }
+    font-size: 60px;
+    line-height: 90px; }
     @media (max-width: 992px) {
       #landing--header .landing-header--inner .landing-header--link {
         font-size: 58px;
@@ -480,13 +473,16 @@ button {
       #landing--header .landing-header--inner .landing-header--link {
         font-size: 36px;
         line-height: 53px; } }
+    @media (max-width: 550px) {
+      #landing--header .landing-header--inner .landing-header--link {
+        display: inline-block; } }
     #landing--header .landing-header--inner .landing-header--link:hover {
       text-decoration: none; }
   #landing--header .landing-header--inner .landing-header--subtext {
-    margin-top: 50px;
+    margin-top: 30px;
     max-width: 750px;
-    font-size: 22px;
-    line-height: 50px; }
+    font-size: 18px;
+    line-height: 44px; }
     @media (max-width: 992px) {
       #landing--header .landing-header--inner .landing-header--subtext {
         max-width: 100%; } }
@@ -564,6 +560,7 @@ button {
 
 #landing--portfolio-grid #portfolio-grid--inner {
   padding: 20px 18px 20px 22px;
+  display: -webkit-flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -571,14 +568,11 @@ button {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   max-width: 1440px;
   margin: 0 auto; }
   @media (max-width: 768px) {
@@ -592,7 +586,9 @@ button {
     position: relative;
     margin: -1px 0 0 -1px;
     cursor: pointer;
-    background: #FFFFFF; }
+    background: #FFFFFF;
+    display: inline-block;
+    vertical-align: top; }
     @media (max-width: 1300px) {
       #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container {
         height: 240px; } }
@@ -619,7 +615,11 @@ button {
     @media (max-width: 550px) {
       #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container {
         width: calc(50% + 1px);
-        height: 250px; } }
+        height: 250px;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+        flex: 0 1 100%;
+        -webkit-flex: 0 1 auto; } }
     @media (max-width: 500px) {
       #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container {
         height: 235px; } }
@@ -634,21 +634,9 @@ button {
     #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container:hover .portfolio-item--logo {
       opacity: 0 !important; }
     #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container .portfolio-item--inner {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      text-align: center; }
       #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container .portfolio-item--inner #logo--Motorq {
         max-width: 120px; }
       #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container .portfolio-item--inner .portfolio-item--logo {
@@ -657,7 +645,10 @@ button {
         max-width: 180px;
         -webkit-transition: .1s ease;
         -o-transition: .1s ease;
-        transition: .1s ease; }
+        transition: .1s ease;
+        top: 50%;
+        position: relative;
+        -webkit-transform: translateY(-50%); }
         @media (max-width: 992px) {
           #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container .portfolio-item--inner .portfolio-item--logo {
             max-height: 30px;
@@ -679,7 +670,8 @@ button {
         transition: .5s ease;
         background-color: #2C22C2;
         z-index: 9;
-        padding: 40px 30px; }
+        padding: 40px 30px;
+        text-align: left; }
         @media (max-width: 1200px) {
           #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container .portfolio-item--inner .portfolio-item--text-overlay {
             padding: 20px; } }
@@ -785,7 +777,8 @@ button {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    min-height: 100%; }
+    min-height: 100%;
+    text-align: center; }
     #landing--statement #statement--gray-box img {
       width: 110px;
       height: auto;

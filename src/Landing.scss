@@ -2,10 +2,7 @@
 #landing-page {
   background: #dee9ea;
   overflow: hidden;
-  padding-top: 30px;
-  @media(max-width: $Tablet){
-    padding-top: 25px;
-  }
+  padding-top: 25px;
 }
 
 .nav--outer {
@@ -102,7 +99,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin: 0 65px 30px 65px;
+    padding: 0 65px 25px 65px;
     @media(max-width: $Tablet){
       margin: 0;
       padding: 0 25px 25px 25px;
@@ -127,23 +124,14 @@
         position: absolute;
       }
       .nav-inner-right--links {
-        width: 315px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
+        text-align: right;
         margin-left: auto;
         @media(max-width: $Tablet){
           display: none;
         }
         a {
           font-size: 16px;
+          margin-left: 70px;
         }
       }
     }
@@ -178,7 +166,9 @@
       @media(max-width: $Tablet) {
         width: 100%;
         margin-left: 0;
-        justify-content: flex-end;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
         text-align: right;
       }
       .landing-header--illo {
@@ -194,7 +184,10 @@
     }
   }
   .landing-header--inner {
-    padding: 65px 0 50px 0;
+    padding: 65px 0 40px 0;
+    @media(max-width: $Desk) {
+      padding: 40px 0 40px 0;
+    }
     @media(max-width: $Tablet) {
       padding: 35px 0 40px 0;
     }
@@ -209,8 +202,8 @@
     .landing-header--link {
       cursor: pointer;
       font-family: 'PostGrotesk' !important;
-      font-size: 64px;
-      line-height: 113px;
+      font-size: 60px;
+      line-height: 90px;
       @media(max-width: $TabletLG) {
         font-size: 58px;
         line-height: 95px;
@@ -219,15 +212,18 @@
         font-size: 36px;
         line-height: 53px;
       }
+      @media(max-width: $Phone) {
+        display: inline-block;
+      }
       &:hover {
         text-decoration: none;
       }
     }
     .landing-header--subtext {
-      margin-top: 50px;
+      margin-top: 30px;
       max-width: 750px;
-      font-size: 22px;
-      line-height: 50px;
+      font-size: 18px;
+      line-height: 44px;
       @media(max-width: $TabletLG) {
         max-width: 100%;
       }
@@ -325,6 +321,7 @@
 #landing--portfolio-grid {
   #portfolio-grid--inner {
     padding: 20px 18px 20px 22px;
+    display: -webkit-flex;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -332,14 +329,11 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     max-width: 1440px;
     margin: 0 auto;
     @media(max-width: $Tablet) {
@@ -354,6 +348,8 @@
       margin: -1px 0 0 -1px;
       cursor: pointer;
       background: $White;
+      display: inline-block;
+      vertical-align:top;
       @media(max-width: 1300px) {
         height: 240px;
       }
@@ -380,6 +376,10 @@
       @media(max-width: $Phone) {
         width: calc(50% + 1px);
         height: 250px;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 100%;
+                flex: 0 1 100%;
+        -webkit-flex: 0 1 auto;
       }
       @media(max-width: 500px) {
         height: 235px;
@@ -399,21 +399,9 @@
         }
       }
       .portfolio-item--inner {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
         width: 100%;
         height: 100%;
+        text-align: center;
         #logo--Motorq {
           max-width: 120px;
         }
@@ -424,6 +412,9 @@
           -webkit-transition: .1s ease;
           -o-transition: .1s ease;
           transition: .1s ease;
+          top: 50%;
+          position: relative;
+          -webkit-transform: translateY(-50%);
           @media(max-width: $TabletLG) {
             max-height: 30px;
             max-width: 140px;
@@ -447,6 +438,7 @@
           background-color: $CobaltBlue;
           z-index: 9;
           padding: 40px 30px;
+          text-align: left;
           @media (max-width: $DeskLG) {
             padding: 20px;
           }
@@ -567,6 +559,7 @@
         -ms-flex-align: center;
             align-items: center;
     min-height: 100%;
+    text-align: center;
     img {
       width: 110px;
       height: auto;
