@@ -691,11 +691,8 @@ button {
               font-size: 14px;
               line-height: 14px; } }
         #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container .portfolio-item--inner .portfolio-item--text-overlay p {
-          font-size: 18px;
-          line-height: 26px; }
-          @media (max-width: 1200px) {
-            #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container .portfolio-item--inner .portfolio-item--text-overlay p {
-              font-size: 16px; } }
+          font-size: 16px;
+          line-height: 24px; }
           @media (max-width: 992px) {
             #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container .portfolio-item--inner .portfolio-item--text-overlay p {
               font-size: 14px;

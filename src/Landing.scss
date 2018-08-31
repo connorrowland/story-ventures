@@ -460,11 +460,8 @@
             }
           }
           p {
-            font-size: 18px;
-            line-height: 26px;
-            @media (max-width: $DeskLG) {
-              font-size: 16px;
-            }
+            font-size: 16px;
+            line-height: 24px;
             @media(max-width: $TabletLG) {
               font-size: 14px;
               line-height: 24px;
