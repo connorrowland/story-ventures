@@ -406,6 +406,7 @@ button {
         width: 100%;
         display: block;
         text-align: center;
+        text-transform: uppercase;
       }
       .mobile-flyout--menu {
         width: 100%;
@@ -502,5 +503,15 @@ button {
         }
       }
     }
+  }
+}
+
+.universal--header {
+  padding: 65px 0 40px 0;
+  @media(max-width: $Desk) {
+    padding: 40px 0 40px 0;
+  }
+  @media(max-width: $Tablet) {
+    padding: 35px 0 40px 0;
   }
 }

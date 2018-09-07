@@ -388,7 +388,7 @@ const createProviders = () => {
         if(providerSection.companies) {
           const company = providerSection.companies.map((company, i) => {
             return (
-              <div className="individual-provider--container">
+              <div className="individual-provider--container" key={i}>
                 <div className="provider--name">
                   <h4>{company.name}</h4>
                 </div>
@@ -446,7 +446,7 @@ const createProviders = () => {
             )
           })
           return (
-            <div className={providerSection.className}>
+            <div className={providerSection.className} key={i}>
               <h3 className="provider-section--name">{providerSection.title}</h3>
               <div className="flex--grid-no-justify">
                 {company}
@@ -456,10 +456,10 @@ const createProviders = () => {
         }
       })
       return (
-        <div className="providers--section">
+        <div className="providers--section" key={i}>
           <section id={`providers--${section.id}`} className="thirds--section">
             <div className="thirds-section--inner">
-              <div className="thirds-section--second" id="approach--text">
+              <div className="thirds-section--second">
                 <h2 className="text--white providers--section-title">{section.title}</h2>
                 <h6 className="eyebrow thirds-section--eyebrow">Includes</h6>
                 <p className="text--white providers--section-description">{section.description}</p>
@@ -488,7 +488,7 @@ export default () => (
     <section id="providers--header">
       <div className="container">
         <div className="col-md-12 col-sm-12 col-xs-12">
-          <div id="providers-header--inner">
+          <div id="providers-header--inner" className="universal--header">
             <h1 id="providers-header--heading">Operational excellence <span className="text--blue">curated for you</span>.</h1>
             <p id="providers-header--subtext">
               We partner with best-in-class service providers who’ll help get your business up and running fast. Just reference Story Ventures when you reach out, and they’ll know they’re receiving a vetted introduction.

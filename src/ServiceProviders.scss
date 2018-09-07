@@ -2,9 +2,11 @@
 
 
 #providers--header {
-  padding: 65px 0 150px 0;
   #providers-header--heading {
     max-width: 700px;
+    @media(max-width: $Tablet) {
+      max-width: 400px;
+    }
   }
 
   #providers-header--subtext {
@@ -15,6 +17,9 @@
   #providers--categories-heading {
     color: $Black;
     margin-bottom: 15px;
+    @media(max-width: $Tablet) {
+      margin-bottom: 10px;
+    }
   }
 
   #providers-categories--container {
@@ -23,38 +28,87 @@
       font-family: 'PostGrotesk';
       font-size: 24px;
       line-height: 50px;
+      @media(max-width: $Tablet) {
+        font-size: 18px;
+        line-height: 47px;
+      }
     }
   }
 }
 
 .providers--section {
+  .thirds--section {
+    @media(max-width: $Tablet) {
+      margin-bottom: 80px;
+    }
+  }
+
+  .thirds-section--second {
+    @media(max-width: $Tablet) {
+      padding: 55px 20px 45px 20px !important;
+    }
+  }
+
+  .eyebrow {
+    @media(max-width: $Tablet) {
+      display: none;
+    }
+  }
+
   #providers--thirds-white-box {
     background-color: $White;
   }
 
   .providers--section-title {
     margin-bottom: 30px;
+    @media(max-width: $Tablet) {
+      margin-bottom: 15px;
+      line-height: 1;
+    }
   }
 
   .providers--section-description {
     max-width: 600px;
     margin-top: 20px;
+    @media(max-width: $Tablet) {
+      margin-top: 10px;
+      font-family: 'Source Code Pro', monospace;
+      letter-spacing: 0.4px;
+      line-height: 21px;
+      font-size: 10px;
+      text-transform: uppercase;
+    }
   }
 
   .providers--sections-container {
     padding: 70px 0 0 0;
     background-color: $LightGray;
+    @media(max-width: $Tablet) {
+      padding: 25px 0 0 0;
+      border-top: 1px solid $Black;
+    }
   }
 }
 
 .providers--sections-container {
   .flex--grid-no-justify {
     margin: 0 -12px;
+    @media(max-width: $Tablet) {
+      margin: 0;
+      justify-content: center;
+    }
   }
   .provider-section--name {
     font-size: 32px;
     line-height: 36px;
     margin: 0 0 35px 0;
+    @media(max-width: $Tablet) {
+      margin: 0 auto 25px auto;
+      font-size: 18px;
+      line-height: 24px;
+      max-width: 445px;
+      padding-left: 25px;
+    }
   }
   .individual-provider--container {
     background-color: $White;
@@ -63,12 +117,19 @@
     margin: 0 12.5px 25px 12.5px;
     align-self: normal;
     max-width: 445px;
+    @media(max-width: $Tablet) {
+      margin: 0 7.5px 10px 7.5px;
+      padding: 30px 20px 10px 20px;
+    }
     .provider--name {
       margin-bottom: 30px;
       h4 {
         font-size: 24px;
         line-height: 1;
         color: $Black;
+        @media(max-width: $Tablet) {
+          font-size: 18px;
+        }
       }
     }
     .provider-attributes--container {
@@ -93,8 +154,12 @@
       .provider-attribute--body {
         margin: 5px 0 0 0;
         font-size: 16px;
-        line-height: 16px;
+        line-height: 18px;
         word-break: break-all;
+        @media(max-width: $Tablet) {
+          font-size: 13px;
+          line-height: 15px;
+        }
       }
     }
   }
@@ -103,19 +168,38 @@
 .providers-sections--container-inner {
   width: 100%;
   padding: 0 40px;
+  @media(max-width: $Tablet) {
+    padding: 0;
+  }
 }
 
 .provider-section--lg {
   width: 100%;
   margin-bottom: 50px;
+  @media(max-width: $Tablet) {
+    margin-bottom: 20px;
+  }
   .individual-provider--container {
     width: 31%;
+    @media(max-width: $TabletLG) {
+      width: 45%;
+    }
+    @media(max-width: $Tablet) {
+      width: 100%;
+    }
   }
 }
 
 .provider-section--md {
   width: 45%;
   margin-bottom: 50px;
+  @media(max-width: $Desk) {
+    width: 47%;
+  }
+  @media(max-width: $Tablet) {
+    margin-bottom: 20px;
+    width: 100%;
+  }
   .individual-provider--container {
     width: 100%;
   }

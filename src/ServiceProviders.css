@@ -340,7 +340,8 @@ button {
       margin-bottom: 35px;
       width: 100%;
       display: block;
-      text-align: center; }
+      text-align: center;
+      text-transform: uppercase; }
     .nav--outer .mobile-flyout--container .mobile-flyout--inner .mobile-flyout--menu {
       width: 100%;
       -webkit-box-pack: justify;
@@ -430,44 +431,103 @@ button {
         margin-left: 70px;
         text-transform: uppercase; }
 
-#providers--header {
-  padding: 65px 0 150px 0; }
-  #providers--header #providers-header--heading {
-    max-width: 700px; }
-  #providers--header #providers-header--subtext {
-    max-width: 900px;
-    margin: 30px 0 55px 0; }
-  #providers--header #providers--categories-heading {
-    color: #000000;
-    margin-bottom: 15px; }
-  #providers--header #providers-categories--container {
-    max-width: 670px; }
-    #providers--header #providers-categories--container .service-providers--section-link {
-      font-family: 'PostGrotesk';
-      font-size: 24px;
-      line-height: 50px; }
+.universal--header {
+  padding: 65px 0 40px 0; }
+  @media (max-width: 1100px) {
+    .universal--header {
+      padding: 40px 0 40px 0; } }
+  @media (max-width: 768px) {
+    .universal--header {
+      padding: 35px 0 40px 0; } }
+
+#providers--header #providers-header--heading {
+  max-width: 700px; }
+  @media (max-width: 768px) {
+    #providers--header #providers-header--heading {
+      max-width: 400px; } }
+
+#providers--header #providers-header--subtext {
+  max-width: 900px;
+  margin: 30px 0 55px 0; }
+
+#providers--header #providers--categories-heading {
+  color: #000000;
+  margin-bottom: 15px; }
+  @media (max-width: 768px) {
+    #providers--header #providers--categories-heading {
+      margin-bottom: 10px; } }
+
+#providers--header #providers-categories--container {
+  max-width: 670px; }
+  #providers--header #providers-categories--container .service-providers--section-link {
+    font-family: 'PostGrotesk';
+    font-size: 24px;
+    line-height: 50px; }
+    @media (max-width: 768px) {
+      #providers--header #providers-categories--container .service-providers--section-link {
+        font-size: 18px;
+        line-height: 47px; } }
+
+@media (max-width: 768px) {
+  .providers--section .thirds--section {
+    margin-bottom: 80px; } }
+
+@media (max-width: 768px) {
+  .providers--section .thirds-section--second {
+    padding: 55px 20px 45px 20px !important; } }
+
+@media (max-width: 768px) {
+  .providers--section .eyebrow {
+    display: none; } }
 
 .providers--section #providers--thirds-white-box {
   background-color: #FFFFFF; }
 
 .providers--section .providers--section-title {
   margin-bottom: 30px; }
+  @media (max-width: 768px) {
+    .providers--section .providers--section-title {
+      margin-bottom: 15px;
+      line-height: 1; } }
 
 .providers--section .providers--section-description {
   max-width: 600px;
   margin-top: 20px; }
+  @media (max-width: 768px) {
+    .providers--section .providers--section-description {
+      margin-top: 10px;
+      font-family: 'Source Code Pro', monospace;
+      letter-spacing: 0.4px;
+      line-height: 21px;
+      font-size: 10px;
+      text-transform: uppercase; } }
 
 .providers--section .providers--sections-container {
   padding: 70px 0 0 0;
   background-color: #F7F7F7; }
+  @media (max-width: 768px) {
+    .providers--section .providers--sections-container {
+      padding: 25px 0 0 0;
+      border-top: 1px solid #000000; } }
 
 .providers--sections-container .flex--grid-no-justify {
   margin: 0 -12px; }
+  @media (max-width: 768px) {
+    .providers--sections-container .flex--grid-no-justify {
+      margin: 0;
+      justify-content: center; } }
 
 .providers--sections-container .provider-section--name {
   font-size: 32px;
   line-height: 36px;
   margin: 0 0 35px 0; }
+  @media (max-width: 768px) {
+    .providers--sections-container .provider-section--name {
+      margin: 0 auto 25px auto;
+      font-size: 18px;
+      line-height: 24px;
+      max-width: 445px;
+      padding-left: 25px; } }
 
 .providers--sections-container .individual-provider--container {
   background-color: #FFFFFF;
@@ -476,12 +536,19 @@ button {
   margin: 0 12.5px 25px 12.5px;
   align-self: normal;
   max-width: 445px; }
+  @media (max-width: 768px) {
+    .providers--sections-container .individual-provider--container {
+      margin: 0 7.5px 10px 7.5px;
+      padding: 30px 20px 10px 20px; } }
   .providers--sections-container .individual-provider--container .provider--name {
     margin-bottom: 30px; }
     .providers--sections-container .individual-provider--container .provider--name h4 {
       font-size: 24px;
       line-height: 1;
       color: #000000; }
+      @media (max-width: 768px) {
+        .providers--sections-container .individual-provider--container .provider--name h4 {
+          font-size: 18px; } }
   .providers--sections-container .individual-provider--container .provider-attributes--container {
     display: flex;
     flex-direction: row;
@@ -501,21 +568,44 @@ button {
     .providers--sections-container .individual-provider--container .provider-attributes--container .provider-attribute--body {
       margin: 5px 0 0 0;
       font-size: 16px;
-      line-height: 16px;
+      line-height: 18px;
       word-break: break-all; }
+      @media (max-width: 768px) {
+        .providers--sections-container .individual-provider--container .provider-attributes--container .provider-attribute--body {
+          font-size: 13px;
+          line-height: 15px; } }
 
 .providers-sections--container-inner {
   width: 100%;
   padding: 0 40px; }
+  @media (max-width: 768px) {
+    .providers-sections--container-inner {
+      padding: 0; } }
 
 .provider-section--lg {
   width: 100%;
   margin-bottom: 50px; }
+  @media (max-width: 768px) {
+    .provider-section--lg {
+      margin-bottom: 20px; } }
   .provider-section--lg .individual-provider--container {
     width: 31%; }
+    @media (max-width: 992px) {
+      .provider-section--lg .individual-provider--container {
+        width: 45%; } }
+    @media (max-width: 768px) {
+      .provider-section--lg .individual-provider--container {
+        width: 100%; } }
 
 .provider-section--md {
   width: 45%;
   margin-bottom: 50px; }
+  @media (max-width: 1100px) {
+    .provider-section--md {
+      width: 47%; } }
+  @media (max-width: 768px) {
+    .provider-section--md {
+      margin-bottom: 20px;
+      width: 100%; } }
   .provider-section--md .individual-provider--container {
     width: 100%; }
