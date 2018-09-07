@@ -1,0 +1,122 @@
+@import "./Shared.scss";
+
+
+#providers--header {
+  padding: 65px 0 150px 0;
+  #providers-header--heading {
+    max-width: 700px;
+  }
+
+  #providers-header--subtext {
+    max-width: 900px;
+    margin: 30px 0 55px 0;
+  }
+
+  #providers--categories-heading {
+    color: $Black;
+    margin-bottom: 15px;
+  }
+
+  #providers-categories--container {
+    max-width: 670px;
+    .service-providers--section-link {
+      font-family: 'PostGrotesk';
+      font-size: 24px;
+      line-height: 50px;
+    }
+  }
+}
+
+.providers--section {
+  #providers--thirds-white-box {
+    background-color: $White;
+  }
+
+  .providers--section-title {
+    margin-bottom: 30px;
+  }
+
+  .providers--section-description {
+    max-width: 600px;
+    margin-top: 20px;
+  }
+
+  .providers--sections-container {
+    padding: 70px 0 0 0;
+    background-color: $LightGray;
+  }
+}
+
+.providers--sections-container {
+  .flex--grid-no-justify {
+    margin: 0 -12px;
+  }
+  .provider-section--name {
+    font-size: 32px;
+    line-height: 36px;
+    margin: 0 0 35px 0;
+  }
+  .individual-provider--container {
+    background-color: $White;
+    border: 1px solid #1D1D1D;
+    padding: 35px 30px;
+    margin: 0 12.5px 25px 12.5px;
+    align-self: normal;
+    max-width: 445px;
+    .provider--name {
+      margin-bottom: 30px;
+      h4 {
+        font-size: 24px;
+        line-height: 1;
+        color: $Black;
+      }
+    }
+    .provider-attributes--container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      .provider--attribute-md {
+        width: 50%;
+        margin-bottom: 20px;
+      }
+      .provider--attribute-lg {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .provider-attribute--title {
+        color: $CobaltBlue;
+        font-size: 10px;
+        line-height: 13px;
+        margin: 0;
+        text-transform: uppercase;
+      }
+      .provider-attribute--body {
+        margin: 5px 0 0 0;
+        font-size: 16px;
+        line-height: 16px;
+        word-break: break-all;
+      }
+    }
+  }
+}
+
+.providers-sections--container-inner {
+  width: 100%;
+  padding: 0 40px;
+}
+
+.provider-section--lg {
+  width: 100%;
+  margin-bottom: 50px;
+  .individual-provider--container {
+    width: 31%;
+  }
+}
+
+.provider-section--md {
+  width: 45%;
+  margin-bottom: 50px;
+  .individual-provider--container {
+    width: 100%;
+  }
+}

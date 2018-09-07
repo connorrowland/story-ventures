@@ -32,7 +32,7 @@ class ContactForm extends React.Component {
           'email': this.state.email
         }
         $.ajax({
-          url: "https://formspree.io/mzgnqgqx",
+          url: "https://formspree.io/xkzwwvnm",
           method: "POST",
           data: signUpData,
           dataType: "json",
@@ -96,9 +96,12 @@ class ContactForm extends React.Component {
     render() {
       const formBody = this.state.successfulSubmit ? this.renderConfirmation() : this.renderForm();
       return (
-        <div>
+        <section id="signup--container">
+          <div id="signup--intro-container">
+            <h2>Let’s write the future together.</h2>
+          </div>
           {formBody}
-        </div>
+        </section>
       );
     }
 
