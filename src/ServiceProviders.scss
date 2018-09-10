@@ -2,6 +2,10 @@
 
 
 #providers--header {
+  padding-bottom: 125px;
+  @media(max-width: $Tablet) {
+    padding-bottom: 20px;
+  }
   #providers-header--heading {
     max-width: 700px;
     @media(max-width: $Tablet) {
@@ -28,9 +32,13 @@
       font-family: 'PostGrotesk';
       font-size: 24px;
       line-height: 50px;
+      display: inline-block;
+      vertical-align: top;
       @media(max-width: $Tablet) {
         font-size: 18px;
         line-height: 47px;
+        width: 100%;
+        display: block;
       }
     }
   }
@@ -84,7 +92,7 @@
     padding: 70px 0 0 0;
     background-color: $LightGray;
     @media(max-width: $Tablet) {
-      padding: 25px 0 0 0;
+      padding: 25px 7.5px 0 7.5px;
       border-top: 1px solid $Black;
     }
   }
@@ -95,7 +103,9 @@
     margin: 0 -12px;
     @media(max-width: $Tablet) {
       margin: 0;
-      justify-content: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
     }
   }
   .provider-section--name {
@@ -115,10 +125,14 @@
     border: 1px solid #1D1D1D;
     padding: 35px 30px;
     margin: 0 12.5px 25px 12.5px;
-    align-self: normal;
+    -ms-flex-item-align: normal;
+        -ms-grid-row-align: normal;
+        align-self: normal;
     max-width: 445px;
+    display: inline-block;
+    vertical-align: top;
     @media(max-width: $Tablet) {
-      margin: 0 7.5px 10px 7.5px;
+      margin: 0 0 10px 0;
       padding: 30px 20px 10px 20px;
     }
     .provider--name {
@@ -133,9 +147,15 @@
       }
     }
     .provider-attributes--container {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
       .provider--attribute-md {
         width: 50%;
         margin-bottom: 20px;
@@ -155,7 +175,8 @@
         margin: 5px 0 0 0;
         font-size: 16px;
         line-height: 18px;
-        word-break: break-all;
+        word-break: break-word;
+        word-wrap: break-word;
         @media(max-width: $Tablet) {
           font-size: 13px;
           line-height: 15px;
