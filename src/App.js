@@ -6,6 +6,7 @@ import * as $ from 'jquery';
 
 // CSS
 import 'normalize.css';
+import './Shared.css';
 
 // Components
 import NavBar from './Components/NavBar/NavBar';
@@ -22,7 +23,7 @@ import NoMatch from './Views/NoMatch';
 // Images
 import Logo from './Images/Story_Logo.png';
 
-const title = 'Story Ventures'
+const title = 'Story Ventures';
 const routes = [
   {
     title: 'Story Ventures',
@@ -34,7 +35,7 @@ const routes = [
     path: '/Service_Providers',
     component: ServiceProvidersPage
   }
-]
+];
 
 class App extends Component {
   render() {

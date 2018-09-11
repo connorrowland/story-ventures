@@ -1,23 +1,4 @@
-// Colors
-$DarkGray: #303030;
-$LightGray: #F7F7F7;
-$CobaltBlue: #2C22C2;
-$White: #FFFFFF;
-$Black: #000000;
-
-// Breakpoints
-$DeskLG: 1200px;
-$Desk: 1100px;
-$TabletLG: 992px;
-$Tablet: 768px;
-$Phone: 550px;
-$PhoneXS: 420px;
-$PhoneXXS: 350px;
-
-// Padding Top/Bottom
-$PadTBLarge: 90px;
-$PadTBMedium: 80px;
-$PadTBSmall: 50px;
+@import "./Variables.scss";
 
 // Font Declarations
 @font-face {
