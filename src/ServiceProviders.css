@@ -1,8 +1,11 @@
 #providers--header {
-  padding-bottom: 65px; }
+  padding: 40px 0 80px 0; }
+  @media (max-width: 992px) {
+    #providers--header {
+      padding: 40px 0 70px 0; } }
   @media (max-width: 768px) {
     #providers--header {
-      padding-bottom: 20px; } }
+      padding: 20px 0 50px 0; } }
   #providers--header #providers-header--heading {
     max-width: 700px; }
     @media (max-width: 768px) {
@@ -21,14 +24,14 @@
     max-width: 670px; }
     #providers--header #providers-categories--container .service-providers--section-link {
       font-family: 'PostGrotesk';
-      font-size: 24px;
-      line-height: 50px;
+      font-size: 20px;
+      line-height: 40px;
       display: inline-block;
       vertical-align: top; }
       @media (max-width: 768px) {
         #providers--header #providers-categories--container .service-providers--section-link {
           font-size: 18px;
-          line-height: 47px;
+          line-height: 40px;
           width: 100%;
           display: block; } }
 
@@ -147,13 +150,12 @@
       text-transform: uppercase; }
     .providers--sections-container .individual-provider--container .provider-attributes--container .provider-attribute--body {
       margin: 5px 0 0 0;
-      font-size: 16px;
+      font-size: 13px;
       line-height: 18px;
       word-break: break-word;
       word-wrap: break-word; }
       @media (max-width: 768px) {
         .providers--sections-container .individual-provider--container .provider-attributes--container .provider-attribute--body {
-          font-size: 13px;
           line-height: 15px; } }
 
 .providers-sections--container-inner {

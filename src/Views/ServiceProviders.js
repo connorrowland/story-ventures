@@ -488,7 +488,7 @@ export default () => (
     <section id="providers--header">
       <div className="container">
         <div className="col-md-12 col-sm-12 col-xs-12">
-          <div id="providers-header--inner" className="universal--header">
+          <div id="providers-header--inner">
             <h1 id="providers-header--heading">Operational excellence <span className="text--blue">curated for you</span>.</h1>
             <p id="providers-header--subtext">
               We partner with best-in-class service providers who’ll help get your business up and running fast. Just reference Story Ventures when you reach out, and they’ll know they’re receiving a vetted introduction.
