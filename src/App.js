@@ -10,10 +10,8 @@ import './Shared.css';
 
 // Components
 import NavBar from './Components/NavBar/NavBar';
-import PortfolioItem from './Components/PortfolioItem/PortfolioItem';
-import ScrollToAnchorLink from './Components/ScrollToAnchorLink';
+import Footer from './Components/Footer';
 import ContactForm from './Components/ContactForm';
-import Footer from './Components/Footer.js';
 
 // Views
 import ServiceProvidersPage from './Views/ServiceProviders';
@@ -53,6 +51,7 @@ class App extends Component {
             ))}
             <Route component={NoMatch} />
           </Switch>
+          <ContactForm />
           <Footer />
         </div>
       </Router>

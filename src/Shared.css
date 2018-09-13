@@ -116,6 +116,12 @@ a {
       font-size: 12px;
       line-height: 15px; } }
 
+label {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.5px; }
+
 button {
   font-size: 20px;
   line-height: 20px;

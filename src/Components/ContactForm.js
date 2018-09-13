@@ -8,12 +8,13 @@ class ContactForm extends React.Component {
       this.state = {
         email: '',
         showError: false,
-        successfulSubmit: false
+        successfulSubmit: false,
+        isActive: false
       }
     }
 
     handleKeyPress = (e) => {
-      if (e.key === 'Enter') {
+      if (e.key === 'Enter' && this.state.isActive) {
         this.handleSubmit();
       }
     }
@@ -64,8 +65,12 @@ class ContactForm extends React.Component {
     }
 
     validateEmail = () => {
-      var email = this.state.email;
-      var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      this.setState({
+        isActive: true
+      })
+
+      const email = this.state.email;
+      const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       if(re.test(email)){
         return true
       } else {

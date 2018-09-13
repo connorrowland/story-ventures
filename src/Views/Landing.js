@@ -246,8 +246,6 @@ export default () => (
         </div>
       </div>
     </section>
-
-    <ContactForm />
-  <Helmet title='' />
+    <Helmet title='' />
   </div>
 )
