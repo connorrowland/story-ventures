@@ -12,8 +12,16 @@ class NavBar extends Component {
     }
   }
 
+  closeMobileNavigation = () => {
+    this.setState({
+      mobileFlyoutOpen: false
+    })
+  }
+
   toggleMobileNavigation = (e) => {
-    e.preventDefault();
+    if(e.target.id === "mobile-flyout--trigger" || e.target.id === "nav-close"){
+      e.preventDefault();
+    }
 
     this.setState({
       mobileFlyoutOpen: !this.state.mobileFlyoutOpen
@@ -26,15 +34,16 @@ class NavBar extends Component {
         <div className={`mobile-flyout--container ${this.state.mobileFlyoutOpen ? "mobile-flyout--open" : "mobile-flyout--closed"}`}>
           <div className="mobile-flyout--inner">
             <div className="mobile-flyout--menu">
-              <Link to="/" className="nav--link">
+              <Link to="/" className="nav--link" onClick={this.toggleMobileNavigation}>
                 <img src={this.props.logo} className="nav-logo--img" alt="Story Logo" />
               </Link>
-              <a href="#" className="nav--x-container" onClick={this.toggleMobileNavigation}>
+              <a href="#" className="nav--x-container" id="nav-close" onClick={this.toggleMobileNavigation}>
                 <img src={XIcon} className="mobile-nav-x--img" alt="Story Logo" />
               </a>
             </div>
-            <Link to="/Service_Providers" className="nav--link">Service Providers</Link>
+            <Link to="/Service_Providers" className="nav--link" onClick={this.toggleMobileNavigation}>Service Providers</Link>
             <Link
+              onClick={this.toggleMobileNavigation}
               to="/#landing--portfolio-grid"
               scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
             >PORTFOLIO</Link>

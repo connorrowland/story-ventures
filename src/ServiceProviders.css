@@ -10,10 +10,16 @@
     max-width: 700px; }
     @media (max-width: 768px) {
       #providers--header #providers-header--heading {
-        max-width: 400px; } }
+        max-width: 400px;
+        font-size: 32px;
+        line-height: 46px; } }
   #providers--header #providers-header--subtext {
     max-width: 900px;
     margin: 10px 0 25px 0; }
+    @media (max-width: 768px) {
+      #providers--header #providers-header--subtext {
+        font-size: 14px;
+        margin: 10px 0 20px 0; } }
   #providers--header #providers--categories-heading {
     color: #000000;
     margin-bottom: 5px; }
@@ -31,19 +37,14 @@
       @media (max-width: 768px) {
         #providers--header #providers-categories--container .service-providers--section-link {
           font-size: 18px;
-          line-height: 40px;
           width: 100%;
           display: block; } }
-
-@media (max-width: 768px) {
-  .providers--section .thirds--section {
-    margin-bottom: 50px; } }
 
 .providers--section .thirds-section--second {
   padding: 44px 20px 40px 60px !important; }
   @media (max-width: 768px) {
     .providers--section .thirds-section--second {
-      padding: 45px 20px !important; } }
+      padding: 45px 25px !important; } }
 
 @media (max-width: 768px) {
   .providers--section .eyebrow {
@@ -100,12 +101,12 @@
       font-size: 18px;
       line-height: 24px;
       max-width: 445px;
-      padding-left: 25px; } }
+      padding-left: 15px; } }
 
 .providers--sections-container .individual-provider--container {
   background-color: #FFFFFF;
   border: 1px solid #1D1D1D;
-  padding: 25px 20px;
+  padding: 20px 20px 0 20px;
   margin: 0 12.5px 25px 12.5px;
   -ms-flex-item-align: normal;
   -ms-grid-row-align: normal;
@@ -116,7 +117,7 @@
   @media (max-width: 768px) {
     .providers--sections-container .individual-provider--container {
       margin: 0 0 10px 0;
-      padding: 20px 20px 10px 20px; } }
+      padding: 20px 15px 10px 15px; } }
   .providers--sections-container .individual-provider--container .provider--name {
     margin-bottom: 15px; }
     .providers--sections-container .individual-provider--container .provider--name h4 {
@@ -139,11 +140,13 @@
     .providers--sections-container .individual-provider--container .provider-attributes--container .provider--attribute-md {
       width: 50%;
       margin: 0;
-      min-height: 60px; }
+      align-self: flex-start;
+      padding-bottom: 20px; }
     .providers--sections-container .individual-provider--container .provider-attributes--container .provider--attribute-lg {
       width: 100%;
       margin: 0;
-      min-height: 60px; }
+      align-self: flex-start;
+      padding-bottom: 20px; }
     .providers--sections-container .individual-provider--container .provider-attributes--container .provider-attribute--title {
       color: #2C22C2;
       font-size: 10px;
@@ -162,7 +165,8 @@
 
 .provider-attribute-email--container {
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  padding-bottom: 0 !important; }
   .provider-attribute-email--container:hover .provider-email--action-explanation {
     display: block; }
   .provider-attribute-email--container .provider-email--action-explanation {
