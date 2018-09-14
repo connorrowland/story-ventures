@@ -39,10 +39,9 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="page">
+        <div className="page container-fluid">
           <Helmet titleTemplate={`%s - ${title}`} />
           <NavBar
-            currentPage="landing"
             logo={Logo}
           />
           <Switch>

@@ -354,12 +354,18 @@ button {
 }
 
 .page {
-  background: #fff;
+  background: $White;
   overflow: hidden;
-  padding-top: 25px;
+  padding: 25px 0 0 0;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .nav--outer {
+  left: 0;
+  right: 0;
+  position: relative;
   #mobile-flyout--trigger {
     display: none;
     @media(max-width: $Tablet){
@@ -372,6 +378,8 @@ button {
     background-color: $White;
     z-index: 9;
     height: 350px;
+    left: 0;
+    right: 0;
     -webkit-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;

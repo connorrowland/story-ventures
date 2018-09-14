@@ -1,5 +1,10 @@
 @import "./Variables.scss";
 
+#service-providers-page {
+  padding: 0;
+  max-width: 100%;
+}
+
 #providers--header {
   padding: 20px 0 60px 0;
   @media(max-width: $TabletLG) {
@@ -12,8 +17,8 @@
     max-width: 700px;
     @media(max-width: $Tablet) {
       max-width: 400px;
-      font-size: 32px;
-      line-height: 46px;
+      font-size: 30px;
+      line-height: 44px
     }
   }
 
@@ -161,15 +166,17 @@
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       .provider--attribute-md {
-        width: 50%;
+        width: 49%;
         margin: 0;
-        align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
         padding-bottom: 20px
       }
       .provider--attribute-lg {
         width: 100%;
         margin: 0;
-        align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
         padding-bottom: 20px;
       }
       .provider-attribute--title {
@@ -296,13 +303,25 @@
     }
     #pw-input--inner {
       max-height: 50px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       @media(max-width: $Tablet) {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         max-height: none;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
       }
       .form-control {
         padding: 15px 10px;
