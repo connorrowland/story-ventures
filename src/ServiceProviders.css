@@ -91,6 +91,7 @@
   @media (max-width: 768px) {
     .providers--sections-container .flex--grid-no-justify {
       margin: 0;
+      text-align: center;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center; } }
@@ -115,6 +116,7 @@
   -ms-flex-item-align: normal;
   -ms-grid-row-align: normal;
   align-self: normal;
+  text-align: left;
   max-width: 445px;
   display: inline-block;
   vertical-align: top; }
@@ -280,9 +282,9 @@
           -ms-flex-align: center;
           align-items: center; } }
       #providers--unauthenticated #password--input-container #pw-input--inner .form-control {
-        padding: 15px 10px;
-        font-size: 14px;
-        line-height: 14px;
+        padding: 0 10px;
+        font-size: 16px;
+        line-height: 16px;
         height: 50px;
         max-width: 300px;
         border: 5px solid #000000; }

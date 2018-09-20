@@ -287,24 +287,6 @@ const sections = [
             differentiation: "WordPress development & UX/UI strengths",
             pricing: "Projects start @ $15k",
             clients: "3D Robotics, Orchard Platform, NaNoWriMo"
-          },
-          {
-            id: "92",
-            name: "Derris",
-            contact: "Alli Stanca",
-            email: "alli@derris.com",
-            differentiation: "Storytelling focus, DTC, complex industries",
-            pricing: "Monthly PR retainers start @ $15k",
-            clients: "Harry's, Warby Parker, Jopwell, Walmart"
-          },
-          {
-            id: "93",
-            name: "BigEyedWish",
-            contact: "Ian Wishingrad",
-            email: "ian@bigeyedwish.com",
-            differentiation: "Sharp creative engages the consumer",
-            pricing: "Starts @ $10k",
-            clients: "Dos Toros, AT&T, Nike, Nestle, Diageo"
           }
         ]
       }
@@ -429,7 +411,7 @@ class ServiceProvidersPageContent extends React.Component {
   }
 
   auth = (pw: string) => {
-    if(pw === "12345") {
+    if(pw === "d@t@") {
       this.setState({
         isAuthenticated: true
       })
