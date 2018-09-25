@@ -15,7 +15,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 0 $PadTBSmall $PadTBSmall $PadTBSmall;
+    padding: 0 $PadTBSmall 40px $PadTBSmall;
     @media(max-width: $Tablet) {
       padding: 0 $PadTBSmall 20px $PadTBSmall;
     }
@@ -46,7 +46,7 @@
     }
   }
   .landing-header--inner {
-    padding: 45px 0 40px 0;
+    padding: 40px 0 35px 0;
     @media(max-width: $Desk) {
       padding: 20px 0 30px 0;
     }
@@ -65,10 +65,16 @@
         display: block;
       }
     }
-    #landing-header--future-heading-two {
-      margin-top: 65px;
+    #landing-header--future-heading-one,#landing-header--future-heading-two {
       @media(max-width: $TabletLG) {
-        margin-top: 35px;
+        font-size: 56px;
+        line-height: 88px;
+      }
+    }
+    #landing-header--future-heading-two {
+      margin-top: 50px;
+      @media(max-width: $TabletLG) {
+        margin-top: 25px;
       }
     }
     .landing-header--link {
@@ -77,8 +83,8 @@
       font-size: 60px;
       line-height: 90px;
       @media(max-width: $TabletLG) {
-        font-size: 58px;
-        line-height: 95px;
+        font-size: 56px;
+        line-height: 88px;
       }
       @media(max-width: $Tablet) {
         font-size: 36px;
