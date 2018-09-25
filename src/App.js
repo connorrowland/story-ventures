@@ -11,7 +11,7 @@ import './Shared.css';
 // Components
 import NavBar from './Components/NavBar/NavBar';
 import Footer from './Components/Footer';
-import ContactForm from './Components/ContactForm';
+import ContactPreFooter from './Components/ContactPreFooter';
 
 // Views
 import ServiceProvidersPage from './Views/ServiceProviders';
@@ -50,7 +50,7 @@ class App extends Component {
             ))}
             <Route component={NoMatch} />
           </Switch>
-          <ContactForm />
+          <ContactPreFooter />
           <Footer />
         </div>
       </Router>

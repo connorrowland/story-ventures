@@ -327,6 +327,12 @@ button {
           margin-top: 5px;
         }
       }
+      .long-form--thirds-header {
+        line-height: 45px;
+        @media(max-width: $Tablet) {
+          line-height: 32px;
+        }
+      }
     }
   }
 }
@@ -509,5 +515,121 @@ button {
   }
   @media(max-width: $Tablet) {
     padding: 35px 0 40px 0;
+  }
+}
+
+#contact-pre-footer {
+  background-color: $CobaltBlue;
+  border-bottom: 10px solid $Black;
+  border-top: 4px solid $Black;
+  @media(max-width: $Tablet) {
+    border-top: 5px solid $Black;
+  }
+  #contact-pre-footer--inner {
+    padding: 80px 0 60px;
+    text-align: center;
+    #pre-footer--eyebrow {
+      color: $White;
+    }
+    #pre-footer--email {
+      color: $White;
+      font-family: 'PostGrotesk';
+      font-size: 36px;
+      line-height: 67px;
+      max-width: 550px;
+      height: 67px;
+      @media(max-width: $Tablet) {
+        font-size: 18px;
+        line-height: 35px;
+        height: 35px;
+      }
+    }
+  }
+}
+
+.click-to-copy--container {
+  position: relative;
+  z-index: 1;
+  &:hover {
+    .click-to-copy--explanation {
+      display: block;
+    }
+  }
+  .click-to-copy--explanation {
+    display: none;
+    position: absolute;
+    z-index: 9;
+    background-color: white;
+    border: 1px solid $Black;
+    top: -25px;
+    padding: 5px;
+    width: 100%;
+    max-width: 175px;
+    left: 50%;
+    transform: translateX(-50%);
+    p {
+      font-size: 10px;
+      line-height: 16px;
+    }
+  }
+  .click-to-copy--link {
+    margin: 0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 0;
+    background: none;
+    resize: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+#footer {
+  #footer--inner {
+    padding: 50px 0;
+    text-align: center;
+    max-width: 775px;
+    margin: 0 auto;
+    @media(max-width: $TabletLG) {
+      max-width: 300px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
+    @media(max-width: $Tablet) {
+      max-width: 225px;
+    }
+    a,h6 {
+      text-transform: uppercase;
+    }
+    a {
+      @media(max-width: $TabletLG) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .click-to-copy--explanation {
+    top: -35px;
+  }
+  #footer--email {
+    color: $CobaltBlue;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'Source Code Pro', monospace;
+    text-decoration: none;
+    -webkit-transition: 0.2s all ease-out;
+    -o-transition: 0.2s all ease-out;
+    transition: 0.2s all ease-out;
+    width: 250px;
+    &:hover{
+      text-decoration: none;
+      color: #4239C8;
+    }
+    @media(max-width: $Tablet) {
+      font-size: 12px;
+      line-height: 15px;
+    }
   }
 }

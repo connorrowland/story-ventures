@@ -37,19 +37,21 @@ export default () => (
       <div className="container">
         <div className="col-md-12 col-sm-12 col-xs-12">
           <div className="landing-header--inner">
-            <h1 id="landing-header--future-heading">
-              The future of <ScrollToAnchorLink
+            <h1 id="landing-header--future-heading-one">
+              The future of <br id="landing-future-heading--tablet-break"/><ScrollToAnchorLink
               anchor="#landing--trio"
               additionalClasses="link--blue landing-header--link"
               innerLink="data automation"
-              /> is unwritten. We back the <ScrollToAnchorLink
+              /> <br/>is unwritten.
+            </h1>
+            <h1 id="landing-header--future-heading-two">
+              We back the <br id="landing-future-heading--mobile-break"/><ScrollToAnchorLink
               anchor="#landing--portfolio-grid"
               additionalClasses="link--blue landing-header--link"
               innerLink="authors"
               />
               .
             </h1>
-            <p className="landing-header--subtext">We launched Story to back entrepreneurs with big ideas that leverage the creation and proliferation of data. As first check investors, we emphasize people and vision over everything else. If you're passionate about the world of data, we'd love to hear from you.</p>
           </div>
         </div>
       </div>
@@ -67,7 +69,7 @@ export default () => (
         <div id="approach--black-box" className="thirds-section--first"></div>
         <div className="thirds-section--second" id="approach--text">
           <h6 className="eyebrow thirds-section--eyebrow">A full-stack approach</h6>
-          <h4 className="thirds-section--heading">We invest in the building blocks of automated systems.</h4>
+          <h4 className="thirds-section--heading long-form--thirds-header">We write first checks into companies that leverage the creation, proliferation, and utilization of data.</h4>
         </div>
       </div>
     </section>
@@ -228,7 +230,7 @@ export default () => (
         </div>
         <div className="thirds-section--second" id="statement--text">
           <h6 className="eyebrow thirds-section--eyebrow">HIGH-CONVICTION INVESTING</h6>
-          <h4 className="statement-text--heading thirds-section--heading">We support founders from the very beginning.</h4>
+          <h4 className="thirds-section--heading long-form--thirds-header">We launched Story to back creative entrepreneurs focused on the building blocks of automated systems.</h4>
         </div>
       </div>
     </section>
@@ -246,6 +248,6 @@ export default () => (
         </div>
       </div>
     </section>
-    <Helmet title='' />
+    <Helmet title=''/>
   </div>
 )

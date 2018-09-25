@@ -423,7 +423,7 @@ class ServiceProvidersPageContent extends React.Component {
   }
 
   handleEmailClick = (companyEmailID: string, event: any) => {
-    let emailField = $(`#${companyEmailID}`).select();
+    $(`#${companyEmailID}`).select();
     document.execCommand("copy");
   }
 

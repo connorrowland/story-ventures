@@ -290,6 +290,11 @@ button {
             font-size: 18px;
             line-height: 35px;
             margin-top: 5px; } }
+      .thirds--section .thirds-section--inner .thirds-section--second .long-form--thirds-header {
+        line-height: 45px; }
+        @media (max-width: 768px) {
+          .thirds--section .thirds-section--inner .thirds-section--second .long-form--thirds-header {
+            line-height: 32px; } }
 
 .section--divider {
   height: 180px;
@@ -447,3 +452,101 @@ button {
   @media (max-width: 768px) {
     .universal--header {
       padding: 35px 0 40px 0; } }
+
+#contact-pre-footer {
+  background-color: #2C22C2;
+  border-bottom: 10px solid #000000;
+  border-top: 4px solid #000000; }
+  @media (max-width: 768px) {
+    #contact-pre-footer {
+      border-top: 5px solid #000000; } }
+  #contact-pre-footer #contact-pre-footer--inner {
+    padding: 80px 0 60px;
+    text-align: center; }
+    #contact-pre-footer #contact-pre-footer--inner #pre-footer--eyebrow {
+      color: #FFFFFF; }
+    #contact-pre-footer #contact-pre-footer--inner #pre-footer--email {
+      color: #FFFFFF;
+      font-family: 'PostGrotesk';
+      font-size: 36px;
+      line-height: 67px;
+      max-width: 550px;
+      height: 67px; }
+      @media (max-width: 768px) {
+        #contact-pre-footer #contact-pre-footer--inner #pre-footer--email {
+          font-size: 18px;
+          line-height: 35px;
+          height: 35px; } }
+
+.click-to-copy--container {
+  position: relative;
+  z-index: 1; }
+  .click-to-copy--container:hover .click-to-copy--explanation {
+    display: block; }
+  .click-to-copy--container .click-to-copy--explanation {
+    display: none;
+    position: absolute;
+    z-index: 9;
+    background-color: white;
+    border: 1px solid #000000;
+    top: -25px;
+    padding: 5px;
+    width: 100%;
+    max-width: 175px;
+    left: 50%;
+    transform: translateX(-50%); }
+    .click-to-copy--container .click-to-copy--explanation p {
+      font-size: 10px;
+      line-height: 16px; }
+  .click-to-copy--container .click-to-copy--link {
+    margin: 0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 0;
+    background: none;
+    resize: none;
+    width: 100%;
+    text-align: center; }
+
+#footer #footer--inner {
+  padding: 50px 0;
+  text-align: center;
+  max-width: 775px;
+  margin: 0 auto; }
+  @media (max-width: 992px) {
+    #footer #footer--inner {
+      max-width: 300px;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
+  @media (max-width: 768px) {
+    #footer #footer--inner {
+      max-width: 225px; } }
+  #footer #footer--inner a, #footer #footer--inner h6 {
+    text-transform: uppercase; }
+  @media (max-width: 992px) {
+    #footer #footer--inner a {
+      margin-bottom: 30px; } }
+
+#footer .click-to-copy--explanation {
+  top: -35px; }
+
+#footer #footer--email {
+  color: #2C22C2;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: 'Source Code Pro', monospace;
+  text-decoration: none;
+  -webkit-transition: 0.2s all ease-out;
+  -o-transition: 0.2s all ease-out;
+  transition: 0.2s all ease-out;
+  width: 250px; }
+  #footer #footer--email:hover {
+    text-decoration: none;
+    color: #4239C8; }
+  @media (max-width: 768px) {
+    #footer #footer--email {
+      font-size: 12px;
+      line-height: 15px; } }
