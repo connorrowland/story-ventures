@@ -448,7 +448,7 @@ class ServiceProvidersPageContent extends React.Component {
                         <p>Click email to copy to clipboard</p>
                       </div>
                       <h6 className="provider-attribute--title">EMAIL</h6>
-                      <textarea readOnly={true} type="text" id={`visible-input-${company.id}`} className="provider-attribute--body provider-attribute--email text--blue" value={company.email} onClick={() => this.handleEmailClick(`visible-input-${company.id}`)}/>
+                      <textarea readOnly={true} type="text" id={`visible-input-${company.id}`} className="provider-attribute--body provider-attribute--email text--blue copy--link" value={company.email} data-clipboard-target={`#visible-input-${company.id}`}/>
                     </div>
                     {
                       company.offices && (

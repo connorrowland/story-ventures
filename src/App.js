@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Helmet from 'react-helmet';
 import * as $ from 'jquery';
+import Clipboard from 'clipboard';
 
 // CSS
 import 'normalize.css';
@@ -20,6 +21,8 @@ import NoMatch from './Views/NoMatch';
 
 // Images
 import Logo from './Images/Story_Logo.png';
+
+new Clipboard('.copy--link');
 
 const title = 'Story Ventures';
 const routes = [

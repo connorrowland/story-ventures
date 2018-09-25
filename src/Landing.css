@@ -63,6 +63,10 @@
     #landing--header .landing-header--inner #landing-header--future-heading-one, #landing--header .landing-header--inner #landing-header--future-heading-two {
       font-size: 56px;
       line-height: 88px; } }
+  @media (max-width: 768px) {
+    #landing--header .landing-header--inner #landing-header--future-heading-one, #landing--header .landing-header--inner #landing-header--future-heading-two {
+      font-size: 36px;
+      line-height: 53px; } }
   #landing--header .landing-header--inner #landing-header--future-heading-two {
     margin-top: 50px; }
     @media (max-width: 992px) {

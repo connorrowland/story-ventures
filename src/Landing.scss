@@ -70,6 +70,10 @@
         font-size: 56px;
         line-height: 88px;
       }
+      @media(max-width: $Tablet) {
+        font-size: 36px;
+        line-height: 53px;
+      }
     }
     #landing-header--future-heading-two {
       margin-top: 50px;
