@@ -53,22 +53,16 @@
     @media(max-width: $Tablet) {
       padding: 35px 0 40px 0;
     }
-    #landing-future-heading--mobile-break {
+    .landing-future-heading--mobile-break {
       display: none;
-      @media(max-width: $Tablet) {
-        display: block;
-      }
-    }
-    #landing-future-heading--tablet-break {
-      display: none;
-      @media(max-width: $TabletLG) {
+      @media(max-width: $Phone) {
         display: block;
       }
     }
     #landing-header--future-heading-one,#landing-header--future-heading-two {
       @media(max-width: $TabletLG) {
-        font-size: 56px;
-        line-height: 88px;
+        font-size: 48px;
+        line-height: 84px;
       }
       @media(max-width: $Tablet) {
         font-size: 36px;
@@ -87,8 +81,8 @@
       font-size: 60px;
       line-height: 90px;
       @media(max-width: $TabletLG) {
-        font-size: 56px;
-        line-height: 88px;
+        font-size: 48px;
+        line-height: 84px;
       }
       @media(max-width: $Tablet) {
         font-size: 36px;
@@ -203,7 +197,6 @@
 #landing--portfolio-grid {
   #portfolio-grid--inner {
     padding: 20px 18px 20px 22px;
-    display: -webkit-flex;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

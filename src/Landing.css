@@ -49,20 +49,15 @@
   @media (max-width: 768px) {
     #landing--header .landing-header--inner {
       padding: 35px 0 40px 0; } }
-  #landing--header .landing-header--inner #landing-future-heading--mobile-break {
+  #landing--header .landing-header--inner .landing-future-heading--mobile-break {
     display: none; }
-    @media (max-width: 768px) {
-      #landing--header .landing-header--inner #landing-future-heading--mobile-break {
-        display: block; } }
-  #landing--header .landing-header--inner #landing-future-heading--tablet-break {
-    display: none; }
-    @media (max-width: 992px) {
-      #landing--header .landing-header--inner #landing-future-heading--tablet-break {
+    @media (max-width: 550px) {
+      #landing--header .landing-header--inner .landing-future-heading--mobile-break {
         display: block; } }
   @media (max-width: 992px) {
     #landing--header .landing-header--inner #landing-header--future-heading-one, #landing--header .landing-header--inner #landing-header--future-heading-two {
-      font-size: 56px;
-      line-height: 88px; } }
+      font-size: 48px;
+      line-height: 84px; } }
   @media (max-width: 768px) {
     #landing--header .landing-header--inner #landing-header--future-heading-one, #landing--header .landing-header--inner #landing-header--future-heading-two {
       font-size: 36px;
@@ -79,8 +74,8 @@
     line-height: 90px; }
     @media (max-width: 992px) {
       #landing--header .landing-header--inner .landing-header--link {
-        font-size: 56px;
-        line-height: 88px; } }
+        font-size: 48px;
+        line-height: 84px; } }
     @media (max-width: 768px) {
       #landing--header .landing-header--inner .landing-header--link {
         font-size: 36px;
@@ -172,7 +167,6 @@
 
 #landing--portfolio-grid #portfolio-grid--inner {
   padding: 20px 18px 20px 22px;
-  display: -webkit-flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

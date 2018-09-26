@@ -38,14 +38,14 @@ export default () => (
         <div className="col-md-12 col-sm-12 col-xs-12">
           <div className="landing-header--inner">
             <h1 id="landing-header--future-heading-one">
-              The future of <br id="landing-future-heading--tablet-break"/><ScrollToAnchorLink
+              The future of <br className="landing-future-heading--mobile-break"/><ScrollToAnchorLink
               anchor="#landing--trio"
               additionalClasses="link--blue landing-header--link"
               innerLink="data automation"
               /> <br/>is unwritten.
             </h1>
             <h1 id="landing-header--future-heading-two">
-              We back the <br id="landing-future-heading--mobile-break"/><ScrollToAnchorLink
+              We back the <br className="landing-future-heading--mobile-break"/><ScrollToAnchorLink
               anchor="#landing--portfolio-grid"
               additionalClasses="link--blue landing-header--link"
               innerLink="authors"
@@ -69,7 +69,7 @@ export default () => (
         <div id="approach--black-box" className="thirds-section--first"></div>
         <div className="thirds-section--second" id="approach--text">
           <h6 className="eyebrow thirds-section--eyebrow">A full-stack approach</h6>
-          <h4 className="thirds-section--heading long-form--thirds-header">We write first checks into companies that leverage the creation, proliferation, and utilization of data.</h4>
+          <h4 className="thirds-section--heading long-form--thirds-header">We invest in the building blocks of automated systems—starting with the very first check.</h4>
         </div>
       </div>
     </section>
@@ -230,7 +230,7 @@ export default () => (
         </div>
         <div className="thirds-section--second" id="statement--text">
           <h6 className="eyebrow thirds-section--eyebrow">HIGH-CONVICTION INVESTING</h6>
-          <h4 className="thirds-section--heading long-form--thirds-header">We launched Story to back creative entrepreneurs focused on the building blocks of automated systems.</h4>
+          <h4 className="thirds-section--heading long-form--thirds-header">We support founders from the very beginning, emphasizing people and vision over everything else.</h4>
         </div>
       </div>
     </section>
