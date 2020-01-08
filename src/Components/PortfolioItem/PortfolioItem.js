@@ -10,9 +10,12 @@ class PortfolioItem extends Component {
           <div className="portfolio-item--text-overlay">
             <h4>{this.props.companyName}</h4>
             <p>{this.props.companyBio}</p>
+            {this.props.secondLink &&
+              <a target="_blank" className="portfolio-item--small-link" href={this.props.secondLink}>{this.props.secondLinkText}</a>
+            }
             <div className="portfolio-item--link-container">
-              <a target="_blank" href={this.props.link}>Launch Site</a>
-              <a target="_blank" href={this.props.link}>
+              <a className="portfolio-item--big-link" target="_blank" href={this.props.link}>Launch Site</a>
+              <a className="portfolio-item--big-link" target="_blank" href={this.props.link}>
                 <img src={RightHandArrow} alt="Right pointed arrow" className="portfolio-item--right-arrow"/>
               </a>
             </div>
