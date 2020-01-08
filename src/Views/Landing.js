@@ -24,17 +24,21 @@ import NanitLogo from '../Images/NanitLogo.png';
 import NemedioLogo from '../Images/NemedioLogo.png';
 import NewtonLogo from '../Images/NewtonLogo.png';
 import PetalLogo from '../Images/PetalLogo.png';
-import PinnLogo from '../Images/PinnLogo.png';
 import SmileLogo from '../Images/SmileLogo.png';
 import StaeLogo from '../Images/StaeLogo.png';
 import SummerLogo from '../Images/SummerLogo.png';
 import WTCLogo from '../Images/WTC_Logo.png';
 import InspirenLogo from '../Images/InspirenLogo.png';
+import ParticleLogo from '../Images/ParticleHealth.png';
+import AspireshipLogo from '../Images/Aspireship.png';
+import MercadoLogo from '../Images/Mercado.png';
+import WelloryLogo from '../Images/Wellory.png';
+import PhotonLogo from '../Images/Via_Photon.png';
 
 export default () => (
   <div id="landing-page">
     <section id="landing--header">
-      <div className="container">
+      <div className="container" id="landing-header--container">
         <div className="col-md-12 col-sm-12 col-xs-12">
           <div className="landing-header--inner">
             <h1 id="landing-header--future-heading-one">
@@ -134,7 +138,9 @@ export default () => (
         logo={ExplorerLogo}
         companyName="Explorer"
         companyBio="Enabling autonomous vehicles to operate at scale."
-        link="http://explorer.ai"
+        link="https://standard.ai/"
+        messageBanner={true}
+        messageBannerText={"ACQUIRED BY SC"}
       />
       <PortfolioItem
         logo={MuseLogo}
@@ -151,7 +157,7 @@ export default () => (
       <PortfolioItem
         logo={FreightLogo}
         companyName="Freightwaves"
-        companyBio="Building information and financial tools to inform trucking and freight companies."
+        companyBio="Building information and financial tools for the freight industry."
         link="http://freightwaves.com"
       />
       <PortfolioItem
@@ -167,10 +173,10 @@ export default () => (
         link="http://newtonx.com"
       />
       <PortfolioItem
-        logo={PinnLogo}
-        companyName="Pinn"
-        companyBio="Utilizing behavioral biometrics to verify a person's identity."
-        link="https://pinn.ai/"
+        logo={MercadoLogo}
+        companyName="Mercado"
+        companyBio="Digitizing the supply chain for importers."
+        link="https://mercadolabs.com/"
       />
       <PortfolioItem
         logo={MotorqLogo}
@@ -187,7 +193,7 @@ export default () => (
       <PortfolioItem
         logo={SummerLogo}
         companyName="Summer"
-        companyBio="Helping students and alumni navigate the student loan burden."
+        companyBio=" Helping student loan borrowers improve their financial health."
         link="http://meetsummer.org"
       />
       <PortfolioItem
@@ -219,6 +225,30 @@ export default () => (
         companyName="Inspiren"
         companyBio="Deploying intelligent sensors to help hospitals improve patient care."
         link="http://inspiren.com/"
+      />
+      <PortfolioItem
+        logo={ParticleLogo}
+        companyName="Particle Health"
+        companyBio="Aggregating electronic medical record data through patient authorization."
+        link="https://home.particlehealth.com/"
+      />
+      <PortfolioItem
+        logo={AspireshipLogo}
+        companyName="Aspireship"
+        companyBio="Training the next generation of SaaS sales professionals."
+        link="https://aspireship.com/"
+      />
+      <PortfolioItem
+        logo={WelloryLogo}
+        companyName="Wellory"
+        companyBio="Creating a platform for personalized nutrition advice."
+        link="https://www.wellory.com/"
+      />
+      <PortfolioItem
+        logo={PhotonLogo}
+        companyName="Via Photon"
+        companyBio="Automating the last meter of fiber optic connectivity."
+        link="https://www.viaphoton.com/"
       />
       </div>
     </section>

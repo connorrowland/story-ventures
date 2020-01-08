@@ -3,6 +3,12 @@
   max-width: 100%;
 }
 #landing--header {
+  #landing-header--container {
+    @media(max-width: $Tablet) {
+      max-width: 100%;
+      padding-left: 35px;
+    }
+  }
   #landing-header--illo-container {
     width: 100%;
     display: -webkit-box;
@@ -348,6 +354,8 @@
           }
           a {
             font-family: 'PostGrotesk';
+          }
+          .portfolio-item--big-link {
             font-size: 18px;
             @media(max-width: $Tablet) {
               font-size: 14px;
@@ -563,5 +571,16 @@
       font-size: 13px;
       line-height: 20px;
     }
+  }
+}
+
+.portfolio-item--small-link {
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: underline;
+  margin-top: 5px;
+  @media(max-width: $Tablet) {
+    font-size: 12px;
+    line-height: 17px;
   }
 }
