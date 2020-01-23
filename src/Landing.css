@@ -108,7 +108,7 @@
   background-color: #000000; }
   @media (max-width: 768px) {
     #landing--approach #landing-approach--inner #approach--black-box {
-      height: 85px; } }
+      height: 55px; } }
 
 #landing--trio .landing-trio--inner {
   display: -webkit-box;
@@ -388,6 +388,9 @@
     align-items: center;
     min-height: 100%;
     text-align: center; }
+    @media (max-width: 768px) {
+      #landing--statement #statement--gray-box {
+        border-top: 55px solid #000000; } }
     #landing--statement #statement--gray-box img {
       width: 110px;
       height: auto;

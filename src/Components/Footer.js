@@ -2,15 +2,16 @@ import React, { Component } from 'react';
 import ClickTopCopyLink from './ClickToCopyLink';
 
 class Footer extends Component {
+  getYear() {
+    const date = new Date();
+    const year = date.getFullYear();
+    return year;
+  }
   render() {
     return (
       <section id="footer">
         <div className="flex--grid" id="footer--inner">
-          <ClickTopCopyLink
-            linkID={"footer--email"}
-            linkInner={"helloworld@storyventures.vc"}
-          />
-          <h6 id="footer--copyright">Copyright © 2017 story ventures All Rights Reserved</h6>
+          <h6 id="footer--copyright">{`Copyright © ${this.getYear()} Story Ventures All Rights Reserved`}</h6>
         </div>
       </section>
     );

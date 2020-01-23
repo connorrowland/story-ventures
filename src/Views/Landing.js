@@ -244,12 +244,6 @@ export default () => (
         companyBio="Creating a platform for personalized nutrition advice."
         link="https://www.wellory.com/"
       />
-      <PortfolioItem
-        logo={PhotonLogo}
-        companyName="Via Photon"
-        companyBio="Automating the last meter of fiber optic connectivity."
-        link="https://www.viaphoton.com/"
-      />
       </div>
     </section>
 
@@ -269,7 +263,7 @@ export default () => (
       <div id="founders--inner">
         <div className="founder-container">
           <h4 className="founder--name">Jake Yormak</h4>
-          <p className="founder--bio">Focuses on the messy middle of making data usable, as well as the impact of design on human-technology interactions. Jake is a former lawyer who has shepherded countless technology companies from creation to scale, and works with the Story portfolio throughout the life-cycle.</p>
+          <p className="founder--bio"> Focuses on the messy middle of making data usable, as well as the impact of design on human-technology interactions. Jake is a former lawyer who leverages his legal and regulatory experience to help companies navigate the complex data ecosystem.</p>
         </div>
         <div className="section--divider"></div>
         <div className="founder-container">
