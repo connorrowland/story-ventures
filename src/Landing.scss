@@ -123,7 +123,7 @@
     #approach--black-box {
       background-color: $Black;
       @media(max-width: $Tablet) {
-        height: 85px;
+        height: 55px;
       }
     }
   }
@@ -440,6 +440,9 @@
             align-items: center;
     min-height: 100%;
     text-align: center;
+    @media(max-width: $Tablet) {
+      border-top: 55px solid $Black;
+    }
     img {
       width: 110px;
       height: auto;

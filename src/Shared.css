@@ -329,7 +329,8 @@ button {
     display: none; }
     @media (max-width: 768px) {
       .nav--outer #mobile-flyout--trigger {
-        display: inline-block; } }
+        display: inline-block;
+        font-size: 20px; } }
   .nav--outer .mobile-flyout--container {
     position: absolute;
     width: 100%;
@@ -356,7 +357,7 @@ button {
       -ms-flex-align: center;
       align-items: center; }
       .nav--outer .mobile-flyout--container .mobile-flyout--inner .nav--link {
-        margin-bottom: 35px;
+        margin-top: 35px;
         width: 100%;
         display: block;
         text-align: center;
@@ -409,7 +410,8 @@ button {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 0 65px 25px 65px; }
+    padding: 0 65px 25px 65px;
+    position: relative; }
     @media (max-width: 768px) {
       .nav--outer .nav--inner {
         margin: 0;
@@ -417,7 +419,15 @@ button {
         -webkit-box-align: start;
         -ms-flex-align: start;
         align-items: flex-start;
-        position: relative; } }
+        position: relative; }
+        .nav--outer .nav--inner:after {
+          content: "";
+          height: 5px;
+          background: #303030;
+          width: calc(100% - 140px);
+          bottom: 25px;
+          right: 25px;
+          position: absolute; } }
     .nav--outer .nav--inner .nav-inner--right {
       width: 100%;
       border-top: 5px solid #303030;
@@ -428,7 +438,7 @@ button {
           margin: 0;
           border: none;
           text-align: right;
-          padding-top: 5px;
+          padding-top: 20px;
           display: inline;
           width: 100%;
           right: 25px;
@@ -524,7 +534,8 @@ button {
     #footer #footer--inner {
       max-width: 225px; } }
   #footer #footer--inner a, #footer #footer--inner h6 {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin: 0 auto; }
   @media (max-width: 992px) {
     #footer #footer--inner a {
       margin-bottom: 30px; } }

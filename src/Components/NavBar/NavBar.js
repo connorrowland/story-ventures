@@ -41,12 +41,20 @@ class NavBar extends Component {
                 <img src={XIcon} className="mobile-nav-x--img" alt="Story Logo" />
               </a>
             </div>
-            <Link to="/Service_Providers" className="nav--link" onClick={this.toggleMobileNavigation}>Service Providers</Link>
             <Link
               onClick={this.toggleMobileNavigation}
               to="/#landing--portfolio-grid"
               scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
-            >PORTFOLIO</Link>
+            >
+              PORTFOLIO
+            </Link>
+            <Link
+              to="/Service_Providers"
+              className="nav--link"
+              onClick={this.toggleMobileNavigation}
+            >
+              SERVICE PROVIDERS
+            </Link>
           </div>
         </div>
 
@@ -57,11 +65,18 @@ class NavBar extends Component {
             </Link>
             <div className="nav-inner--right">
               <div className="nav-inner-right--links">
-                <Link to="/Service_Providers" className="nav--link">Service Providers</Link>
                 <Link
                   to="/#landing--portfolio-grid"
                   scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
-                >PORTFOLIO</Link>
+                >
+                  PORTFOLIO
+                </Link>
+                <Link
+                  to="/Service_Providers"
+                  className="nav--link"
+                >
+                  Service Providers
+                </Link>
               </div>
               <a href="/" className="nav--link" id="mobile-flyout--trigger" onClick={this.toggleMobileNavigation}>MENU</a>
             </div>
