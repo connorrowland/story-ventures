@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.0d93ccdd.chunk.css",
-    "main.js": "/static/js/main.e4890080.chunk.js",
-    "main.js.map": "/static/js/main.e4890080.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.7768cfbd.js",
-    "runtime-main.js.map": "/static/js/runtime-main.7768cfbd.js.map",
+    "main.css": "/static/css/main.43fac2b6.chunk.css",
+    "main.js": "/static/js/main.03aca024.chunk.js",
+    "main.js.map": "/static/js/main.03aca024.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c7248113.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c7248113.js.map",
     "static/css/2.764ccc25.chunk.css": "/static/css/2.764ccc25.chunk.css",
-    "static/js/2.676ab479.chunk.js": "/static/js/2.676ab479.chunk.js",
-    "static/js/2.676ab479.chunk.js.map": "/static/js/2.676ab479.chunk.js.map",
+    "static/js/2.badff540.chunk.js": "/static/js/2.badff540.chunk.js",
+    "static/js/2.badff540.chunk.js.map": "/static/js/2.badff540.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.8aa3319a690ebfa6b051aa309bf1f710.js": "/precache-manifest.8aa3319a690ebfa6b051aa309bf1f710.js",
+    "precache-manifest.496c1176e1c3ae9ab384c5094574ed0a.js": "/precache-manifest.496c1176e1c3ae9ab384c5094574ed0a.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.764ccc25.chunk.css.map": "/static/css/2.764ccc25.chunk.css.map",
-    "static/css/main.0d93ccdd.chunk.css.map": "/static/css/main.0d93ccdd.chunk.css.map",
-    "static/js/2.676ab479.chunk.js.LICENSE": "/static/js/2.676ab479.chunk.js.LICENSE",
+    "static/css/main.43fac2b6.chunk.css.map": "/static/css/main.43fac2b6.chunk.css.map",
+    "static/js/2.badff540.chunk.js.LICENSE.txt": "/static/js/2.badff540.chunk.js.LICENSE.txt",
     "static/media/Aspireship.png": "/static/media/Aspireship.6bba8e6e.png",
     "static/media/ExplorerLogo.png": "/static/media/ExplorerLogo.21990aea.png",
     "static/media/InspirenLogo.png": "/static/media/InspirenLogo.17b0f387.png",
@@ -33,10 +33,10 @@
     "static/media/Wellory.png": "/static/media/Wellory.c6a4d6f8.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.7768cfbd.js",
+    "static/js/runtime-main.c7248113.js",
     "static/css/2.764ccc25.chunk.css",
-    "static/js/2.676ab479.chunk.js",
-    "static/css/main.0d93ccdd.chunk.css",
-    "static/js/main.e4890080.chunk.js"
+    "static/js/2.badff540.chunk.js",
+    "static/css/main.43fac2b6.chunk.css",
+    "static/js/main.03aca024.chunk.js"
   ]
 }
