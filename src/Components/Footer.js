@@ -11,7 +11,10 @@ class Footer extends Component {
     return (
       <section id="footer">
         <div className="flex--grid" id="footer--inner">
-          <h6 id="footer--copyright">{`Copyright © ${this.getYear()} Story Ventures All Rights Reserved`}</h6>
+          <h6
+            id="footer--copyright">
+            {`Copyright © ${this.getYear()} Story Ventures All Rights Reserved`}
+          </h6>
         </div>
       </section>
     );

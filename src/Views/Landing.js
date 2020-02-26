@@ -117,7 +117,6 @@ export default () => (
         </div>
       </div>
     </section>
-
     <section id="landing--portfolio-grid">
       <div id="portfolio-grid--inner">
       <PortfolioItem
@@ -246,7 +245,6 @@ export default () => (
       />
       </div>
     </section>
-
     <section id="landing--statement" className="thirds--section">
       <div className="thirds-section--inner">
         <div className="thirds-section--first" id="statement--gray-box">
@@ -258,7 +256,6 @@ export default () => (
         </div>
       </div>
     </section>
-
     <section id="landing--founders">
       <div id="founders--inner">
         <div className="founder-container">
