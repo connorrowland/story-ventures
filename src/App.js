@@ -1,6 +1,6 @@
 // Dependencies
-import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Helmet from 'react-helmet';
 import * as $ from 'jquery';
 import Clipboard from 'clipboard';
