@@ -32,8 +32,8 @@ const routes = [
     component: LandingPage,
     exact: true
   }, {
-    title: 'Story Ventures — Service Providers',
-    path: '/Service_Providers',
+    title: 'Story Ventures — Platform',
+    path: '/platform',
     component: ServiceProvidersPage
   }
 ];

@@ -48,13 +48,12 @@ class NavBar extends Component {
             >
               PORTFOLIO
             </Link>
-            <Link
-              to="/Service_Providers"
+            <a
+              href="https://platform.storyventures.vc/"
               className="nav--link"
-              onClick={this.toggleMobileNavigation}
             >
-              SERVICE PROVIDERS
-            </Link>
+              Platform
+            </a>
           </div>
         </div>
 
@@ -71,12 +70,12 @@ class NavBar extends Component {
                 >
                   PORTFOLIO
                 </Link>
-                <Link
-                  to="/Service_Providers"
+                <a
+                  href="https://platform.storyventures.vc/"
                   className="nav--link"
                 >
-                  Service Providers
-                </Link>
+                  Platform
+                </a>
               </div>
               <a href="/" className="nav--link" id="mobile-flyout--trigger" onClick={this.toggleMobileNavigation}>MENU</a>
             </div>

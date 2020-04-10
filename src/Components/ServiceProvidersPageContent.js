@@ -565,7 +565,7 @@ class ServiceProvidersPageContent extends React.Component {
     ) : (
       <div id="providers--unauthenticated">
         <div id="providers-unauthenticated--text">
-          <h1>Please enter your password below to view our service providers.</h1>
+          <h1>Please enter your password below to view our platform.</h1>
         </div>
         {
           this.state.showError &&

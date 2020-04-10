@@ -9,6 +9,6 @@ import PageContent from '../Components/ServiceProvidersPageContent';
 export default () => (
   <div id="service-providers-page">
     {<PageContent />}
-    <Helmet title='Service Providers' />
+    <Helmet title='Platform' />
   </div>
 )
