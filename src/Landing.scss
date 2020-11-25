@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import "./Variables.scss";
 #landing-page {
   max-width: 100%;
@@ -14,14 +21,14 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 0 $PadTBSmall 40px $PadTBSmall;
+    padding: 0 $PadTBSmall 40px 0;
     @media(max-width: $Tablet) {
       padding: 0 $PadTBSmall 20px $PadTBSmall;
     }
@@ -119,12 +126,23 @@
 }
 
 #landing--approach {
+  background-color: #2C22C2;
   #landing-approach--inner {
+    @media(max-width: 768px) {
+      max-width: 100%;
+      padding-left: 35px;
+    }
     #approach--black-box {
       background-color: $Black;
       @media(max-width: $Tablet) {
         height: 55px;
       }
+    }
+  }
+  .thirds-section--second {
+    padding: 80px 15px;
+    @media(max-width: 992px) {
+      padding: 50px 15px;
     }
   }
 }

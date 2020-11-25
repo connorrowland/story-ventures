@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.0d93ccdd.chunk.css",
-    "main.js": "/static/js/main.e4890080.chunk.js",
-    "main.js.map": "/static/js/main.e4890080.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.7768cfbd.js",
-    "runtime-main.js.map": "/static/js/runtime-main.7768cfbd.js.map",
+    "main.css": "/static/css/main.b04f8ba1.chunk.css",
+    "main.js": "/static/js/main.05ead8df.chunk.js",
+    "main.js.map": "/static/js/main.05ead8df.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c7248113.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c7248113.js.map",
     "static/css/2.764ccc25.chunk.css": "/static/css/2.764ccc25.chunk.css",
-    "static/js/2.676ab479.chunk.js": "/static/js/2.676ab479.chunk.js",
-    "static/js/2.676ab479.chunk.js.map": "/static/js/2.676ab479.chunk.js.map",
+    "static/js/2.5e3d0473.chunk.js": "/static/js/2.5e3d0473.chunk.js",
+    "static/js/2.5e3d0473.chunk.js.map": "/static/js/2.5e3d0473.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.8aa3319a690ebfa6b051aa309bf1f710.js": "/precache-manifest.8aa3319a690ebfa6b051aa309bf1f710.js",
+    "precache-manifest.007f8a19adbd2026a0ca20aa54979c24.js": "/precache-manifest.007f8a19adbd2026a0ca20aa54979c24.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.764ccc25.chunk.css.map": "/static/css/2.764ccc25.chunk.css.map",
-    "static/css/main.0d93ccdd.chunk.css.map": "/static/css/main.0d93ccdd.chunk.css.map",
-    "static/js/2.676ab479.chunk.js.LICENSE": "/static/js/2.676ab479.chunk.js.LICENSE",
+    "static/css/main.b04f8ba1.chunk.css.map": "/static/css/main.b04f8ba1.chunk.css.map",
+    "static/js/2.5e3d0473.chunk.js.LICENSE.txt": "/static/js/2.5e3d0473.chunk.js.LICENSE.txt",
     "static/media/Aspireship.png": "/static/media/Aspireship.6bba8e6e.png",
     "static/media/ExplorerLogo.png": "/static/media/ExplorerLogo.21990aea.png",
     "static/media/InspirenLogo.png": "/static/media/InspirenLogo.17b0f387.png",
@@ -23,20 +23,22 @@
     "static/media/NemedioLogo.png": "/static/media/NemedioLogo.233bf1bd.png",
     "static/media/NewtonLogo.png": "/static/media/NewtonLogo.dac269a9.png",
     "static/media/ParticleHealth.png": "/static/media/ParticleHealth.b0b2d5d7.png",
+    "static/media/PhoodLogoBlack.png": "/static/media/PhoodLogoBlack.c057bb0d.png",
     "static/media/Shared.css": "/static/media/PostGrotesk-Medium.c9c26dde.woff",
     "static/media/SensorySystemsIllo.png": "/static/media/SensorySystemsIllo.5d4c8afd.png",
     "static/media/ServiceProviders.css": "/static/media/Service_Providers_Blurry_BG.5f598492.png",
     "static/media/SmileLogo.png": "/static/media/SmileLogo.97a47b41.png",
     "static/media/SoftwareIllo.png": "/static/media/SoftwareIllo.18c72b2a.png",
     "static/media/Story_Logo.png": "/static/media/Story_Logo.4e0d9fb4.png",
+    "static/media/ViaPhotonLogo.svg": "/static/media/ViaPhotonLogo.c15dfe5e.svg",
     "static/media/WTC_Logo.png": "/static/media/WTC_Logo.aef7d2b9.png",
-    "static/media/Wellory.png": "/static/media/Wellory.c6a4d6f8.png"
+    "static/media/Wellory.png": "/static/media/Wellory.3780f100.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.7768cfbd.js",
+    "static/js/runtime-main.c7248113.js",
     "static/css/2.764ccc25.chunk.css",
-    "static/js/2.676ab479.chunk.js",
-    "static/css/main.0d93ccdd.chunk.css",
-    "static/js/main.e4890080.chunk.js"
+    "static/js/2.5e3d0473.chunk.js",
+    "static/css/main.b04f8ba1.chunk.css",
+    "static/js/main.05ead8df.chunk.js"
   ]
 }

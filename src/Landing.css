@@ -1,3 +1,9 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 #landing-page {
   max-width: 100%; }
 
@@ -11,14 +17,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding: 0 50px 40px 50px; }
+  padding: 0 50px 40px 0; }
   @media (max-width: 768px) {
     #landing--header #landing-header--illo-container {
       padding: 0 50px 20px 50px; } }
@@ -104,11 +110,22 @@
         line-height: 36px;
         margin-top: 30px; } }
 
-#landing--approach #landing-approach--inner #approach--black-box {
-  background-color: #000000; }
+#landing--approach {
+  background-color: #2C22C2; }
   @media (max-width: 768px) {
-    #landing--approach #landing-approach--inner #approach--black-box {
-      height: 55px; } }
+    #landing--approach #landing-approach--inner {
+      max-width: 100%;
+      padding-left: 35px; } }
+  #landing--approach #landing-approach--inner #approach--black-box {
+    background-color: #000000; }
+    @media (max-width: 768px) {
+      #landing--approach #landing-approach--inner #approach--black-box {
+        height: 55px; } }
+  #landing--approach .thirds-section--second {
+    padding: 80px 15px; }
+    @media (max-width: 992px) {
+      #landing--approach .thirds-section--second {
+        padding: 50px 15px; } }
 
 #landing--trio .landing-trio--inner {
   display: -webkit-box;
