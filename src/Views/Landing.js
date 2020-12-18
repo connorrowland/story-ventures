@@ -33,7 +33,9 @@ import ParticleLogo from '../Images/ParticleHealth.png';
 import AspireshipLogo from '../Images/Aspireship.png';
 import MercadoLogo from '../Images/Mercado.png';
 import WelloryLogo from '../Images/Wellory.png';
-import PhotonLogo from '../Images/Via_Photon.png';
+import PhotonLogo from '../Images/ViaPhotonLogo.svg';
+import PhoodLogo from '../Images/PhoodLogoBlack.png';
+import TrueFootageLogo from '../Images/TrueFootageLogoBlack.png';
 
 export default () => (
   <div id="landing-page">
@@ -57,21 +59,24 @@ export default () => (
               .
             </h1>
           </div>
+          <div id="landing-header--illo-container">
+            <div id="landing-header-illo--inner">
+              <img src={InfrastructureIllo} alt="Story Illustration" className="landing-header--illo"/>
+              <img src={SensorySystemsIllo} alt="Story Illustration" className="landing-header--illo"/>
+              <img src={SoftwareIllo} alt="Story Illustration" className="landing-header--illo"/>
+            </div>
+          </div>
         </div>
       </div>
-      <div id="landing-header--illo-container">
-        <div id="landing-header-illo--inner">
-          <img src={InfrastructureIllo} alt="Story Illustration" className="landing-header--illo"/>
-          <img src={SensorySystemsIllo} alt="Story Illustration" className="landing-header--illo"/>
-          <img src={SoftwareIllo} alt="Story Illustration" className="landing-header--illo"/>
-        </div>
-      </div>
+
     </section>
 
     <section id="landing--approach" className="thirds--section">
-      <div className="thirds-section--inner" id="landing-approach--inner">
-        <div id="approach--black-box" className="thirds-section--first"></div>
-        <div className="thirds-section--second" id="approach--text">
+      <div className="thirds-section--inner container" id="landing-approach--inner">
+        {
+          // <div id="approach--black-box" className="thirds-section--first"></div>
+        }
+        <div className="thirds-section--second col-md-12 col-sm-12 col-xs-12" id="approach--text">
           <h6 className="eyebrow thirds-section--eyebrow">A full-stack approach</h6>
           <h4 className="thirds-section--heading long-form--thirds-header">We invest in the building blocks of automated systems—starting with the very first check.</h4>
         </div>
@@ -100,7 +105,7 @@ export default () => (
           <p className="landing-trio--sub-heading">Systems that process, organize, and store data.</p>
           <div className="landing-trio--attributes">
             <h6 className="landing-trio-attributes--heading">INCLUDES</h6>
-            <p className="landing-trio-attributes--subheading">Developer tools<br className="hide-for-mobile"/><span className="show-for-mobile">,</span> Distributed cloud<br className="hide-for-mobile"/><span className="show-for-mobile">,</span> Sensor fusion</p>
+            <p className="landing-trio-attributes--subheading">Data cleansing<br className="hide-for-mobile"/><span className="show-for-mobile">,</span> Data aggregation<br className="hide-for-mobile"/><span className="show-for-mobile">,</span> Sensor fusion</p>
           </div>
         </div>
         <div className="section--divider"></div>
@@ -123,7 +128,7 @@ export default () => (
         logo={SayspringLogo}
         companyName="Sayspring"
         companyBio="Empowering designers to create voice-enabled applications without code."
-        link="http://sayspring.com"
+        link="https://www.adobe.com/products/xd.html?promoid=PYPVQ3HN&mv=other"
         messageBanner={true}
         messageBannerText={"ACQUIRED BY ADOBE"}
       />
@@ -242,6 +247,24 @@ export default () => (
         companyName="Wellory"
         companyBio="Creating a platform for personalized nutrition advice."
         link="https://www.wellory.com/"
+      />
+      <PortfolioItem
+        logo={PhotonLogo}
+        companyName="viaPhoton"
+        companyBio="Manufacturing short-notice fiber cables that connect to 5G radios and data center servers."
+        link="https://viaphoton.com/"
+      />
+      <PortfolioItem
+        logo={PhoodLogo}
+        companyName="Phood"
+        companyBio="Harnessing computer vision and AI to stop food waste before it starts."
+        link="https://www.phoodsolutions.com/"
+      />
+      <PortfolioItem
+        logo={TrueFootageLogo}
+        companyName="True Footage"
+        companyBio="Capturing property level data to streamline residential transactions."
+        link="https://www.truefootage.tech/"
       />
       </div>
     </section>
