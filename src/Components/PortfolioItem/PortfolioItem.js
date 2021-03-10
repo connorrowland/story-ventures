@@ -6,7 +6,13 @@ class PortfolioItem extends Component {
     return (
       <div className="portfolio-item--container">
         <div className="portfolio-item--inner">
-          <img src={this.props.logo} alt="Story Portfolio Logo" className="portfolio-item--logo" id={`logo--${this.props.companyName}`}/>
+          {
+            (this.props.logo) ? (
+              <img src={this.props.logo} alt="Story Portfolio Logo" className="portfolio-item--logo" id={`logo--${this.props.companyName}`}/>
+              ) : (
+                <h3 className="portfolio-item--logo-text">{this.props.logoText}</h3>
+              )
+          }
           <div className="portfolio-item--text-overlay">
             <h4>{this.props.companyName}</h4>
             <p>{this.props.companyBio}</p>
@@ -14,10 +20,13 @@ class PortfolioItem extends Component {
               <a target="_blank" className="portfolio-item--small-link" href={this.props.secondLink}>{this.props.secondLinkText}</a>
             }
             <div className="portfolio-item--link-container">
-              <a className="portfolio-item--big-link" target="_blank" href={this.props.link}>Launch Site</a>
-              <a className="portfolio-item--big-link" target="_blank" href={this.props.link}>
-                <img src={RightHandArrow} alt="Right pointed arrow" className="portfolio-item--right-arrow"/>
-              </a>
+            {
+              !this.props.hideLink && (
+                <a className="portfolio-item--big-link" target="_blank" href={this.props.link}>
+                  <img src={RightHandArrow} alt="Right pointed arrow" className="portfolio-item--right-arrow"/>
+                </a>
+                )
+            }
             </div>
           </div>
         </div>

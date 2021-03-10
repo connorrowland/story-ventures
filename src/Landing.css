@@ -267,6 +267,12 @@
       text-align: center; }
       #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container .portfolio-item--inner #logo--Motorq {
         max-width: 120px; }
+      #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container .portfolio-item--inner .portfolio-item--logo-text {
+        text-align: center;
+        top: 50%;
+        position: relative;
+        -webkit-transform: translateY(-50%);
+        margin: 0 auto; }
       #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container .portfolio-item--inner .portfolio-item--logo {
         height: auto;
         max-height: 40px;
@@ -352,13 +358,11 @@
               bottom: 25px; } }
           #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container .portfolio-item--inner .portfolio-item--text-overlay .portfolio-item--link-container img {
             width: 55px;
-            height: 18px;
-            margin-left: 30px; }
+            height: 18px; }
             @media (max-width: 768px) {
               #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container .portfolio-item--inner .portfolio-item--text-overlay .portfolio-item--link-container img {
                 width: 35px;
-                height: 10px;
-                margin-left: 30px; } }
+                height: 10px; } }
     #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container .message-banner--container {
       position: absolute;
       bottom: 25px;
