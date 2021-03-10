@@ -36,6 +36,7 @@ import WelloryLogo from '../Images/Wellory.png';
 import PhotonLogo from '../Images/ViaPhotonLogo.svg';
 import PhoodLogo from '../Images/PhoodLogoBlack.png';
 import TrueFootageLogo from '../Images/TrueFootageLogoBlack.png';
+import StealthLogo from '../Images/StealthLogo.png';
 
 export default () => (
   <div id="landing-page">
@@ -265,6 +266,13 @@ export default () => (
         companyName="True Footage"
         companyBio="Capturing property level data to streamline residential transactions."
         link="https://www.truefootage.tech/"
+      />
+      <PortfolioItem
+        logo={StealthLogo}
+        companyName="Stealth"
+        companyBio="Leveraging alternative data to improve mental health."
+        link=""
+        hideLink={true}
       />
       </div>
     </section>

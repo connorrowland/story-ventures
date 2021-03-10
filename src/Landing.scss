@@ -304,6 +304,13 @@
         #logo--Motorq {
           max-width: 120px;
         }
+        .portfolio-item--logo-text {
+          text-align: center;
+          top: 50%;
+          position: relative;
+          -webkit-transform: translateY(-50%);
+          margin: 0 auto;
+        }
         .portfolio-item--logo {
           height: auto;
           max-height: 40px;
@@ -396,11 +403,9 @@
             img {
               width: 55px;
               height: 18px;
-              margin-left: 30px;
               @media(max-width: $Tablet) {
                 width: 35px;
                 height: 10px;
-                margin-left: 30px;
               }
             }
           }
