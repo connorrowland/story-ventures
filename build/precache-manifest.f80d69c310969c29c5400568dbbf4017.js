@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cce63b487a71e955559cb84e79b23ac2",
+    "revision": "1d21d56492c149adc32346b68cd25507",
     "url": "/index.html"
   },
   {
-    "revision": "3444a878f8198788b030",
+    "revision": "2030a89f40f7ca3681e8",
     "url": "/static/css/2.764ccc25.chunk.css"
   },
   {
-    "revision": "a4851a61d29f8b027a2d",
-    "url": "/static/css/main.6f689878.chunk.css"
+    "revision": "4359b75e50712d9e72ca",
+    "url": "/static/css/main.93bc4265.chunk.css"
   },
   {
-    "revision": "3444a878f8198788b030",
-    "url": "/static/js/2.5f1f3a50.chunk.js"
+    "revision": "2030a89f40f7ca3681e8",
+    "url": "/static/js/2.eedd6efe.chunk.js"
   },
   {
     "revision": "371fff44705f9884799e91751f8d2454",
-    "url": "/static/js/2.5f1f3a50.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.eedd6efe.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a4851a61d29f8b027a2d",
-    "url": "/static/js/main.4ed581f8.chunk.js"
+    "revision": "4359b75e50712d9e72ca",
+    "url": "/static/js/main.d419ae83.chunk.js"
   },
   {
     "revision": "9525fd855b689bdf07cf",
@@ -122,5 +122,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3780f1008a35ab87db0e76bed357149b",
     "url": "/static/media/Wellory.3780f100.png"
+  },
+  {
+    "revision": "cc324a6d0b520f5779f8aa90a42266a0",
+    "url": "/static/media/ZayaLogo.cc324a6d.png"
   }
 ]);

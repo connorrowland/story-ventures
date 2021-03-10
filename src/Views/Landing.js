@@ -37,6 +37,7 @@ import PhotonLogo from '../Images/ViaPhotonLogo.svg';
 import PhoodLogo from '../Images/PhoodLogoBlack.png';
 import TrueFootageLogo from '../Images/TrueFootageLogoBlack.png';
 import StealthLogo from '../Images/StealthLogo.png';
+import ZayaLogo from '../Images/ZayaLogo.png';
 
 export default () => (
   <div id="landing-page">
@@ -273,6 +274,12 @@ export default () => (
         companyBio="Leveraging alternative data to improve mental health."
         link=""
         hideLink={true}
+      />
+      <PortfolioItem
+        logo={ZayaLogo}
+        companyName="Zaya"
+        companyBio="Building the nation's first maternity expert network covered by insurance."
+        link="https://www.joinzaya.com/"
       />
       </div>
     </section>

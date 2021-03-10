@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.6f689878.chunk.css",
-    "main.js": "/static/js/main.4ed581f8.chunk.js",
-    "main.js.map": "/static/js/main.4ed581f8.chunk.js.map",
+    "main.css": "/static/css/main.93bc4265.chunk.css",
+    "main.js": "/static/js/main.d419ae83.chunk.js",
+    "main.js.map": "/static/js/main.d419ae83.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f983bb1c.js",
     "runtime-main.js.map": "/static/js/runtime-main.f983bb1c.js.map",
     "static/css/2.764ccc25.chunk.css": "/static/css/2.764ccc25.chunk.css",
-    "static/js/2.5f1f3a50.chunk.js": "/static/js/2.5f1f3a50.chunk.js",
-    "static/js/2.5f1f3a50.chunk.js.map": "/static/js/2.5f1f3a50.chunk.js.map",
+    "static/js/2.eedd6efe.chunk.js": "/static/js/2.eedd6efe.chunk.js",
+    "static/js/2.eedd6efe.chunk.js.map": "/static/js/2.eedd6efe.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.1431cdef3b93da190a496c7f124e74ce.js": "/precache-manifest.1431cdef3b93da190a496c7f124e74ce.js",
+    "precache-manifest.f80d69c310969c29c5400568dbbf4017.js": "/precache-manifest.f80d69c310969c29c5400568dbbf4017.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.764ccc25.chunk.css.map": "/static/css/2.764ccc25.chunk.css.map",
-    "static/css/main.6f689878.chunk.css.map": "/static/css/main.6f689878.chunk.css.map",
-    "static/js/2.5f1f3a50.chunk.js.LICENSE.txt": "/static/js/2.5f1f3a50.chunk.js.LICENSE.txt",
+    "static/css/main.93bc4265.chunk.css.map": "/static/css/main.93bc4265.chunk.css.map",
+    "static/js/2.eedd6efe.chunk.js.LICENSE.txt": "/static/js/2.eedd6efe.chunk.js.LICENSE.txt",
     "static/media/Aspireship.png": "/static/media/Aspireship.6bba8e6e.png",
     "static/media/ExplorerLogo.png": "/static/media/ExplorerLogo.21990aea.png",
     "static/media/InspirenLogo.png": "/static/media/InspirenLogo.17b0f387.png",
@@ -33,13 +33,14 @@
     "static/media/Story_Logo.png": "/static/media/Story_Logo.4e0d9fb4.png",
     "static/media/ViaPhotonLogo.svg": "/static/media/ViaPhotonLogo.c15dfe5e.svg",
     "static/media/WTC_Logo.png": "/static/media/WTC_Logo.aef7d2b9.png",
-    "static/media/Wellory.png": "/static/media/Wellory.3780f100.png"
+    "static/media/Wellory.png": "/static/media/Wellory.3780f100.png",
+    "static/media/ZayaLogo.png": "/static/media/ZayaLogo.cc324a6d.png"
   },
   "entrypoints": [
     "static/js/runtime-main.f983bb1c.js",
     "static/css/2.764ccc25.chunk.css",
-    "static/js/2.5f1f3a50.chunk.js",
-    "static/css/main.6f689878.chunk.css",
-    "static/js/main.4ed581f8.chunk.js"
+    "static/js/2.eedd6efe.chunk.js",
+    "static/css/main.93bc4265.chunk.css",
+    "static/js/main.d419ae83.chunk.js"
   ]
 }
