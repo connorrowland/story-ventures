@@ -240,6 +240,11 @@
       padding: 0;
       width: 101%;
     }
+    #Aether-Logo {
+      .portfolio-item--logo {
+        max-height: 75px;
+      }
+    }
     .portfolio-item--container {
       border: 1px solid $Black;
       width: 20%;
@@ -296,11 +301,6 @@
         }
         .portfolio-item--logo {
           opacity: 0 !important;
-        }
-      }
-      #Aether-Logo {
-        .portfolio-item--logo {
-          max-height: 75px;
         }
       }
       .portfolio-item--inner {

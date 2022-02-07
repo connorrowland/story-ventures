@@ -330,7 +330,7 @@ export default () => (
         <PortfolioItem
           logo={LivezLogo}
           companyName="Livez"
-          companyBio="Leveraging alternative data to improve mental health."
+          companyBio="Delivering preventative healthcare through personalized data."
           link="https://livez.ai/"
         />
         <PortfolioItem
