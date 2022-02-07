@@ -66,11 +66,13 @@
       #landing--header .landing-header--inner .landing-future-heading--mobile-break {
         display: block; } }
   @media (max-width: 992px) {
-    #landing--header .landing-header--inner #landing-header--future-heading-one, #landing--header .landing-header--inner #landing-header--future-heading-two {
+    #landing--header .landing-header--inner #landing-header--future-heading-one,
+    #landing--header .landing-header--inner #landing-header--future-heading-two {
       font-size: 48px;
       line-height: 84px; } }
   @media (max-width: 768px) {
-    #landing--header .landing-header--inner #landing-header--future-heading-one, #landing--header .landing-header--inner #landing-header--future-heading-two {
+    #landing--header .landing-header--inner #landing-header--future-heading-one,
+    #landing--header .landing-header--inner #landing-header--future-heading-two {
       font-size: 36px;
       line-height: 53px; } }
   #landing--header .landing-header--inner #landing-header--future-heading-two {
@@ -80,7 +82,7 @@
         margin-top: 25px; } }
   #landing--header .landing-header--inner .landing-header--link {
     cursor: pointer;
-    font-family: 'PostGrotesk' !important;
+    font-family: "PostGrotesk" !important;
     font-size: 60px;
     line-height: 90px; }
     @media (max-width: 992px) {
@@ -111,7 +113,7 @@
         margin-top: 30px; } }
 
 #landing--approach {
-  background-color: #2C22C2; }
+  background-color: #2c22c2; }
   @media (max-width: 768px) {
     #landing--approach #landing-approach--inner {
       max-width: 100%;
@@ -207,6 +209,8 @@
     #landing--portfolio-grid #portfolio-grid--inner {
       padding: 0;
       width: 101%; } }
+  #landing--portfolio-grid #portfolio-grid--inner #Aether-Logo .portfolio-item--logo {
+    max-height: 75px; }
   #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container {
     border: 1px solid #000000;
     width: 20%;
@@ -267,6 +271,10 @@
       text-align: center; }
       #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container .portfolio-item--inner #logo--Motorq {
         max-width: 120px; }
+      #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container .portfolio-item--inner #logo--Zaya {
+        width: 93px !important;
+        height: auto !important;
+        max-height: none !important; }
       #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container .portfolio-item--inner .portfolio-item--logo-text {
         text-align: center;
         top: 50%;
@@ -277,9 +285,9 @@
         height: auto;
         max-height: 40px;
         max-width: 180px;
-        -webkit-transition: .1s ease;
-        -o-transition: .1s ease;
-        transition: .1s ease;
+        -webkit-transition: 0.1s ease;
+        -o-transition: 0.1s ease;
+        transition: 0.1s ease;
         top: 50%;
         position: relative;
         -webkit-transform: translateY(-50%); }
@@ -299,9 +307,9 @@
         height: 100%;
         width: 100%;
         opacity: 0;
-        -webkit-transition: .5s ease;
-        -o-transition: .5s ease;
-        transition: .5s ease;
+        -webkit-transition: 0.5s ease;
+        -o-transition: 0.5s ease;
+        transition: 0.5s ease;
         background-color: #2C22C2;
         z-index: 9;
         padding: 40px 30px;
@@ -309,7 +317,9 @@
         @media (max-width: 1200px) {
           #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container .portfolio-item--inner .portfolio-item--text-overlay {
             padding: 20px; } }
-        #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container .portfolio-item--inner .portfolio-item--text-overlay h4, #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container .portfolio-item--inner .portfolio-item--text-overlay p, #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container .portfolio-item--inner .portfolio-item--text-overlay a {
+        #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container .portfolio-item--inner .portfolio-item--text-overlay h4,
+        #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container .portfolio-item--inner .portfolio-item--text-overlay p,
+        #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container .portfolio-item--inner .portfolio-item--text-overlay a {
           color: #FFFFFF; }
         #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container .portfolio-item--inner .portfolio-item--text-overlay h4 {
           font-size: 24px;
@@ -336,7 +346,7 @@
               font-size: 12px;
               line-height: 17px; } }
         #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container .portfolio-item--inner .portfolio-item--text-overlay a {
-          font-family: 'PostGrotesk'; }
+          font-family: "PostGrotesk"; }
         #landing--portfolio-grid #portfolio-grid--inner .portfolio-item--container .portfolio-item--inner .portfolio-item--text-overlay .portfolio-item--big-link {
           font-size: 18px; }
           @media (max-width: 768px) {

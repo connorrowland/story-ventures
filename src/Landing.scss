@@ -11,7 +11,7 @@
 }
 #landing--header {
   #landing-header--container {
-    @media(max-width: $Tablet) {
+    @media (max-width: $Tablet) {
       max-width: 100%;
       padding-left: 35px;
     }
@@ -22,14 +22,14 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     padding: 0 $PadTBSmall 40px 0;
-    @media(max-width: $Tablet) {
+    @media (max-width: $Tablet) {
       padding: 0 $PadTBSmall 20px $PadTBSmall;
     }
     #landing-header-illo--inner {
@@ -38,19 +38,19 @@
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
       -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start;
-      @media(max-width: $Tablet) {
+      -ms-flex-align: start;
+      align-items: flex-start;
+      @media (max-width: $Tablet) {
         display: none;
       }
       .landing-header--illo {
         width: 50px;
         max-height: 57px;
         height: auto;
-        @media(max-width: $Tablet) {
+        @media (max-width: $Tablet) {
           width: 40px;
           max-height: 46px;
           margin-left: 40px;
@@ -60,48 +60,49 @@
   }
   .landing-header--inner {
     padding: 40px 0 35px 0;
-    @media(max-width: $Desk) {
+    @media (max-width: $Desk) {
       padding: 20px 0 30px 0;
     }
-    @media(max-width: $Tablet) {
+    @media (max-width: $Tablet) {
       padding: 35px 0 40px 0;
     }
     .landing-future-heading--mobile-break {
       display: none;
-      @media(max-width: $Phone) {
+      @media (max-width: $Phone) {
         display: block;
       }
     }
-    #landing-header--future-heading-one,#landing-header--future-heading-two {
-      @media(max-width: $TabletLG) {
+    #landing-header--future-heading-one,
+    #landing-header--future-heading-two {
+      @media (max-width: $TabletLG) {
         font-size: 48px;
         line-height: 84px;
       }
-      @media(max-width: $Tablet) {
+      @media (max-width: $Tablet) {
         font-size: 36px;
         line-height: 53px;
       }
     }
     #landing-header--future-heading-two {
       margin-top: 50px;
-      @media(max-width: $TabletLG) {
+      @media (max-width: $TabletLG) {
         margin-top: 25px;
       }
     }
     .landing-header--link {
       cursor: pointer;
-      font-family: 'PostGrotesk' !important;
+      font-family: "PostGrotesk" !important;
       font-size: 60px;
       line-height: 90px;
-      @media(max-width: $TabletLG) {
+      @media (max-width: $TabletLG) {
         font-size: 48px;
         line-height: 84px;
       }
-      @media(max-width: $Tablet) {
+      @media (max-width: $Tablet) {
         font-size: 36px;
         line-height: 53px;
       }
-      @media(max-width: $Phone) {
+      @media (max-width: $Phone) {
         display: inline-block;
       }
       &:hover {
@@ -113,10 +114,10 @@
       max-width: 750px;
       font-size: 18px;
       line-height: 44px;
-      @media(max-width: $TabletLG) {
+      @media (max-width: $TabletLG) {
         max-width: 100%;
       }
-      @media(max-width: $Tablet) {
+      @media (max-width: $Tablet) {
         font-size: 15px;
         line-height: 36px;
         margin-top: 30px;
@@ -126,22 +127,22 @@
 }
 
 #landing--approach {
-  background-color: #2C22C2;
+  background-color: #2c22c2;
   #landing-approach--inner {
-    @media(max-width: 768px) {
+    @media (max-width: 768px) {
       max-width: 100%;
       padding-left: 35px;
     }
     #approach--black-box {
       background-color: $Black;
-      @media(max-width: $Tablet) {
+      @media (max-width: $Tablet) {
         height: 55px;
       }
     }
   }
   .thirds-section--second {
     padding: 80px 15px;
-    @media(max-width: 992px) {
+    @media (max-width: 992px) {
       padding: 50px 15px;
     }
   }
@@ -154,24 +155,24 @@
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    @media(max-width: $Tablet) {
+    -ms-flex-align: start;
+    align-items: flex-start;
+    @media (max-width: $Tablet) {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
     }
     .landing-trio--item {
       padding: $PadTBMedium 0 $PadTBMedium $PadTBMedium;
       width: 33%;
-      @media(max-width: $Desk) {
+      @media (max-width: $Desk) {
         padding: $PadTBSmall 0 $PadTBSmall $PadTBSmall;
       }
-      @media(max-width: $Tablet) {
+      @media (max-width: $Tablet) {
         padding: 35px 25px;
         width: 100%;
       }
@@ -182,9 +183,9 @@
         display: -ms-flexbox;
         display: flex;
         -webkit-box-align: end;
-            -ms-flex-align: end;
-                align-items: flex-end;
-        @media(max-width: $Tablet) {
+        -ms-flex-align: end;
+        align-items: flex-end;
+        @media (max-width: $Tablet) {
           height: 65px;
           margin-bottom: 30px;
         }
@@ -192,11 +193,11 @@
           width: 75px;
           height: auto;
           max-height: 85px;
-          @media(max-width: $TabletLG) {
+          @media (max-width: $TabletLG) {
             width: 65px;
             max-height: 75px;
           }
-          @media(max-width: $Tablet) {
+          @media (max-width: $Tablet) {
             width: 55px;
             max-height: 65px;
           }
@@ -226,18 +227,23 @@
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     max-width: 1440px;
     margin: 0 auto;
-    @media(max-width: $Tablet) {
+    @media (max-width: $Tablet) {
       padding: 0;
       width: 101%;
+    }
+    #Aether-Logo {
+      .portfolio-item--logo {
+        max-height: 75px;
+      }
     }
     .portfolio-item--container {
       border: 1px solid $Black;
@@ -248,45 +254,45 @@
       cursor: pointer;
       background: $White;
       display: inline-block;
-      vertical-align:top;
-      @media(max-width: 1300px) {
+      vertical-align: top;
+      @media (max-width: 1300px) {
         height: 240px;
       }
-      @media(max-width: $DeskLG) {
+      @media (max-width: $DeskLG) {
         height: 220px;
       }
-      @media(max-width: $Desk) {
+      @media (max-width: $Desk) {
         height: 240px;
         width: calc(25% + 1px);
       }
-      @media(max-width: $TabletLG) {
+      @media (max-width: $TabletLG) {
         height: 210px;
       }
-      @media(max-width: 850px) {
+      @media (max-width: 850px) {
         width: calc(33.33% + 1px);
         height: 245px;
       }
-      @media(max-width: $Tablet) {
+      @media (max-width: $Tablet) {
         height: 230px;
       }
-      @media(max-width: 650px) {
+      @media (max-width: 650px) {
         height: 205px;
       }
-      @media(max-width: $Phone) {
+      @media (max-width: $Phone) {
         width: calc(50% + 1px);
         height: 250px;
         -webkit-box-flex: 0;
-            -ms-flex: 0 1 100%;
-                flex: 0 1 100%;
+        -ms-flex: 0 1 100%;
+        flex: 0 1 100%;
         -webkit-flex: 0 1 auto;
       }
-      @media(max-width: 500px) {
+      @media (max-width: 500px) {
         height: 235px;
       }
-      @media(max-width: $PhoneXS) {
+      @media (max-width: $PhoneXS) {
         height: 205px;
       }
-      @media(max-width: $PhoneXXS) {
+      @media (max-width: $PhoneXXS) {
         height: 160px;
       }
       &:hover {
@@ -304,6 +310,11 @@
         #logo--Motorq {
           max-width: 120px;
         }
+        #logo--Zaya {
+          width: 93px !important;
+          height: auto !important;
+          max-height: none !important;
+        }
         .portfolio-item--logo-text {
           text-align: center;
           top: 50%;
@@ -311,21 +322,22 @@
           -webkit-transform: translateY(-50%);
           margin: 0 auto;
         }
+
         .portfolio-item--logo {
           height: auto;
           max-height: 40px;
           max-width: 180px;
-          -webkit-transition: .1s ease;
-          -o-transition: .1s ease;
-          transition: .1s ease;
+          -webkit-transition: 0.1s ease;
+          -o-transition: 0.1s ease;
+          transition: 0.1s ease;
           top: 50%;
           position: relative;
           -webkit-transform: translateY(-50%);
-          @media(max-width: $TabletLG) {
+          @media (max-width: $TabletLG) {
             max-height: 30px;
             max-width: 140px;
           }
-          @media(max-width: $Tablet) {
+          @media (max-width: $Tablet) {
             max-width: 115px;
           }
         }
@@ -338,9 +350,9 @@
           height: 100%;
           width: 100%;
           opacity: 0;
-          -webkit-transition: .5s ease;
-          -o-transition: .5s ease;
-          transition: .5s ease;
+          -webkit-transition: 0.5s ease;
+          -o-transition: 0.5s ease;
+          transition: 0.5s ease;
           background-color: $CobaltBlue;
           z-index: 9;
           padding: 40px 30px;
@@ -348,7 +360,9 @@
           @media (max-width: $DeskLG) {
             padding: 20px;
           }
-          h4,p,a{
+          h4,
+          p,
+          a {
             color: $White;
           }
           h4 {
@@ -360,7 +374,7 @@
               font-size: 20px;
               line-height: 20px;
             }
-            @media(max-width: $Tablet) {
+            @media (max-width: $Tablet) {
               font-size: 14px;
               line-height: 14px;
             }
@@ -368,21 +382,21 @@
           p {
             font-size: 16px;
             line-height: 24px;
-            @media(max-width: $TabletLG) {
+            @media (max-width: $TabletLG) {
               font-size: 14px;
               line-height: 24px;
             }
-            @media(max-width: $Tablet) {
+            @media (max-width: $Tablet) {
               font-size: 12px;
               line-height: 17px;
             }
           }
           a {
-            font-family: 'PostGrotesk';
+            font-family: "PostGrotesk";
           }
           .portfolio-item--big-link {
             font-size: 18px;
-            @media(max-width: $Tablet) {
+            @media (max-width: $Tablet) {
               font-size: 14px;
               line-height: 14px;
             }
@@ -393,17 +407,17 @@
             display: -ms-flexbox;
             display: flex;
             -webkit-box-pack: justify;
-                -ms-flex-pack: justify;
-                    justify-content: space-between;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
             position: absolute;
             bottom: 30px;
-            @media(max-width: $TabletLG) {
+            @media (max-width: $TabletLG) {
               bottom: 25px;
             }
             img {
               width: 55px;
               height: 18px;
-              @media(max-width: $Tablet) {
+              @media (max-width: $Tablet) {
                 width: 35px;
                 height: 10px;
               }
@@ -423,10 +437,10 @@
           background-color: $CobaltBlue;
           max-width: 185px;
           margin: 0 auto;
-          @media(max-width: $Tablet) {
+          @media (max-width: $Tablet) {
             max-width: 165px;
           }
-          @media(max-width: $Phone) {
+          @media (max-width: $Phone) {
             height: 24px;
             max-width: 130px;
           }
@@ -434,10 +448,10 @@
             color: $White;
             font-size: 11px;
             line-height: 32px;
-            @media(max-width: $Tablet) {
+            @media (max-width: $Tablet) {
               font-size: 10px;
             }
-            @media(max-width: $Phone) {
+            @media (max-width: $Phone) {
               font-size: 8px;
               line-height: 24px;
             }
@@ -456,29 +470,29 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     min-height: 100%;
     text-align: center;
-    @media(max-width: $Tablet) {
+    @media (max-width: $Tablet) {
       border-top: 55px solid $Black;
     }
     img {
       width: 110px;
       height: auto;
       max-height: 170px;
-      @media(max-width: $Tablet) {
+      @media (max-width: $Tablet) {
         width: 100px;
         max-height: 150px;
       }
-      @media(max-width: $Phone) {
+      @media (max-width: $Phone) {
         with: 90px;
       }
     }
-    @media(max-width: $Tablet) {
+    @media (max-width: $Tablet) {
       padding: 40px 0;
     }
   }
@@ -491,24 +505,24 @@
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    @media(max-width: $Tablet) {
+    -ms-flex-align: start;
+    align-items: flex-start;
+    @media (max-width: $Tablet) {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
     }
     .founder-container {
       width: 49.5%;
       padding: $PadTBMedium;
-      @media(max-width: $Tablet) {
+      @media (max-width: $Tablet) {
         padding: 50px 25px;
         width: 100%;
       }
@@ -516,10 +530,10 @@
     .founder--bio {
       line-height: 43px;
       margin-top: 10px;
-      @media(max-width: $Tablet) {
+      @media (max-width: $Tablet) {
         line-height: 30px;
       }
-      @media(max-width: $Phone) {
+      @media (max-width: $Phone) {
         max-width: 100%;
       }
     }
@@ -529,14 +543,14 @@
 #signup--container {
   border-top: 10px solid $Black;
   border-bottom: 10px solid $Black;
-  @media(max-width: $Tablet) {
+  @media (max-width: $Tablet) {
     border-top: 5px solid $Black;
     border-bottom: none;
   }
   #signup--intro-container {
     background-color: $CobaltBlue;
     padding: 30px 75px;
-    @media(max-width: $Tablet) {
+    @media (max-width: $Tablet) {
       padding: 29px 25px;
     }
     h2 {
@@ -549,23 +563,23 @@
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     position: relative;
-    @media(max-width: $Tablet) {
+    @media (max-width: $Tablet) {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
     }
     input {
       padding: 28px 75px;
       border: none;
       height: 125px;
-      @media(max-width: $Tablet) {
+      @media (max-width: $Tablet) {
         padding: 25px;
         height: 85px;
       }
@@ -574,7 +588,7 @@
       height: 125px;
       width: 300px;
       padding: 0;
-      @media(max-width: $Tablet) {
+      @media (max-width: $Tablet) {
         width: 100%;
         height: 70px;
       }
@@ -583,7 +597,7 @@
   #signup--confirmation-text {
     padding: 27px 75px;
     background: $White;
-    @media(max-width: $Tablet) {
+    @media (max-width: $Tablet) {
       padding: 25px;
     }
   }
@@ -592,7 +606,7 @@
     left: 77px;
     top: 13px;
     color: #c30a0a;
-    @media(max-width: $Tablet) {
+    @media (max-width: $Tablet) {
       left: 25px;
       font-size: 13px;
       line-height: 20px;
@@ -605,7 +619,7 @@
   line-height: 24px;
   text-decoration: underline;
   margin-top: 5px;
-  @media(max-width: $Tablet) {
+  @media (max-width: $Tablet) {
     font-size: 12px;
     line-height: 17px;
   }
