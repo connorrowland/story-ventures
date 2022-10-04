@@ -39,6 +39,7 @@ import PolymerLogo from "../Images/PolymerLogo.png";
 import DelfinaLogo from "../Images/DelfinaLogo.png";
 import AwareHealthcareLogo from "../Images/AwareHealthcareLogo.png";
 import AetherLogo from "../Images/AetherLogo.png";
+import BopsLogo from "../Images/bops-logo.png";
 
 export default () => (
   <div id="landing-page">
@@ -102,9 +103,6 @@ export default () => (
         className="thirds-section--inner container"
         id="landing-approach--inner"
       >
-        {
-          // <div id="approach--black-box" className="thirds-section--first"></div>
-        }
         <div
           className="thirds-section--second col-md-12 col-sm-12 col-xs-12"
           id="approach--text"
@@ -363,6 +361,12 @@ export default () => (
           companyName="Delfina"
           companyBio="Adding remote monitoring and predictive analytics to the pregnancy journey."
           link="https://delfina.com/"
+        />
+        <PortfolioItem
+          logo={BopsLogo}
+          companyName="Bops"
+          companyBio="Improving profitability and unlocking working capital capacities through API-driven supply chain analytics."
+          link="https://www.bops.ai/"
         />
       </div>
     </section>

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.79ad2eea.css",
-    "main.js": "/static/js/main.eb057913.js",
+    "main.js": "/static/js/main.1ce928eb.js",
     "static/media/PostGrotesk-Medium.svg": "/static/media/PostGrotesk-Medium.ea39bcc0b59cee7d4b37.svg",
     "static/media/Aspireship.png": "/static/media/Aspireship.cdc19180626ddb76e181.png",
     "static/media/Service_Providers_Blurry_BG.png": "/static/media/Service_Providers_Blurry_BG.055d9e170cf30f9310ff.png",
@@ -15,6 +15,7 @@
     "static/media/ZayaLogo.png": "/static/media/ZayaLogo.c90ef4bfc9ead650953d.png",
     "static/media/Story_Logo.png": "/static/media/Story_Logo.7365b017e2575d293dae.png",
     "static/media/MotorqLogo.png": "/static/media/MotorqLogo.2dd5eeb72f2bdc81df34.png",
+    "static/media/bops-logo.png": "/static/media/bops-logo.9458b2eae288067488b0.png",
     "static/media/AwareHealthcareLogo.png": "/static/media/AwareHealthcareLogo.871adece1fd3f7e1c949.png",
     "static/media/SmileLogo.png": "/static/media/SmileLogo.ea6f9f2921ea1c9939d6.png",
     "static/media/NemedioLogo.png": "/static/media/NemedioLogo.c107b455fee693b37e73.png",
@@ -30,10 +31,10 @@
     "static/media/ViaPhotonLogo.svg": "/static/media/ViaPhotonLogo.7e6410ceeef0cd73d6d993456a7f115f.svg",
     "index.html": "/index.html",
     "main.79ad2eea.css.map": "/static/css/main.79ad2eea.css.map",
-    "main.eb057913.js.map": "/static/js/main.eb057913.js.map"
+    "main.1ce928eb.js.map": "/static/js/main.1ce928eb.js.map"
   },
   "entrypoints": [
     "static/css/main.79ad2eea.css",
-    "static/js/main.eb057913.js"
+    "static/js/main.1ce928eb.js"
   ]
 }
