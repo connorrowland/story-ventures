@@ -40,6 +40,7 @@ import DelfinaLogo from "../Images/DelfinaLogo.png";
 import AwareHealthcareLogo from "../Images/AwareHealthcareLogo.png";
 import AetherLogo from "../Images/AetherLogo.png";
 import BopsLogo from "../Images/bops-logo.png";
+import SheerHealthLogo from '../Images/sheer-health-logo-black.png'
 
 export default () => (
   <div id="landing-page">
@@ -310,7 +311,7 @@ export default () => (
         <PortfolioItem
           logo={WelloryLogo}
           companyName="Wellory"
-          companyBio="Creating a platform for personalized nutrition advice."
+          companyBio="Expanding access to quality in-network nutrition care."
           link="https://www.wellory.com/"
         />
         <PortfolioItem
@@ -367,6 +368,13 @@ export default () => (
           companyName="Bops"
           companyBio="Improving profitability and unlocking working capital capacities through API-driven supply chain analytics."
           link="https://www.bops.ai/"
+        />
+        <PortfolioItem
+          logo={SheerHealthLogo}
+          companyName="Sheer Health"
+          companyBio="Ingesting healthcare claims data to provide personalized recommendations that saves money and maximizes plan benefits."
+          link=""
+          hideLink={true}
         />
       </div>
     </section>
