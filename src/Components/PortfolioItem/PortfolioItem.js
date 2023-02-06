@@ -4,8 +4,10 @@ import RightHandArrow from "./Right_Pointed_Arrow.png";
 class PortfolioItem extends Component {
   render() {
     return (
-      <div
+      <a
         className="portfolio-item--container"
+        target="_blank"
+        href={this.props.hideLink ? undefined : this.props.link}
         id={this.props.id ? this.props.id : undefined}
       >
         <div className="portfolio-item--inner">
@@ -33,17 +35,11 @@ class PortfolioItem extends Component {
             )}
             <div className="portfolio-item--link-container">
               {!this.props.hideLink && (
-                <a
-                  className="portfolio-item--big-link"
-                  target="_blank"
-                  href={this.props.link}
-                >
-                  <img
-                    src={RightHandArrow}
-                    alt="Right pointed arrow"
-                    className="portfolio-item--right-arrow"
-                  />
-                </a>
+                <img
+                  src={RightHandArrow}
+                  alt="Right pointed arrow"
+                  className="portfolio-item--right-arrow"
+                />
               )}
             </div>
           </div>
@@ -57,7 +53,7 @@ class PortfolioItem extends Component {
             </div>
           </div>
         )}
-      </div>
+      </a>
     );
   }
 }
