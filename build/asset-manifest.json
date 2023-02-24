@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.79ad2eea.css",
-    "main.js": "/static/js/main.200e88de.js",
+    "main.css": "/static/css/main.7a13225b.css",
+    "main.js": "/static/js/main.195126ec.js",
     "static/media/PostGrotesk-Medium.svg": "/static/media/PostGrotesk-Medium.ea39bcc0b59cee7d4b37.svg",
     "static/media/sheer-health-logo-black.png": "/static/media/sheer-health-logo-black.e5ebb29858ecb4002adf.png",
     "static/media/Aspireship.png": "/static/media/Aspireship.cdc19180626ddb76e181.png",
@@ -31,11 +31,11 @@
     "static/media/SensorySystemsIllo.png": "/static/media/SensorySystemsIllo.2cb81f0c5957a29f381c.png",
     "static/media/ViaPhotonLogo.svg": "/static/media/ViaPhotonLogo.7e6410ceeef0cd73d6d993456a7f115f.svg",
     "index.html": "/index.html",
-    "main.79ad2eea.css.map": "/static/css/main.79ad2eea.css.map",
-    "main.200e88de.js.map": "/static/js/main.200e88de.js.map"
+    "main.7a13225b.css.map": "/static/css/main.7a13225b.css.map",
+    "main.195126ec.js.map": "/static/js/main.195126ec.js.map"
   },
   "entrypoints": [
-    "static/css/main.79ad2eea.css",
-    "static/js/main.200e88de.js"
+    "static/css/main.7a13225b.css",
+    "static/js/main.195126ec.js"
   ]
 }

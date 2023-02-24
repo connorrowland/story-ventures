@@ -57,6 +57,13 @@ class App extends Component {
 
               gtag('config', 'G-EQGC6J42VV');`}
             </script>
+
+            <meta
+              http-equiv="Cache-Control"
+              content="no-cache, no-store, must-revalidate"
+            />
+            <meta http-equiv="Pragma" content="no-cache" />
+            <meta http-equiv="Expires" content="0" />
           </Helmet>
           <NavBar logo={Logo} />
           <Switch>

@@ -41,6 +41,8 @@ import AwareHealthcareLogo from "../Images/AwareHealthcareLogo.png";
 import AetherLogo from "../Images/AetherLogo.png";
 import BopsLogo from "../Images/bops-logo.png";
 import SheerHealthLogo from '../Images/sheer-health-logo-black.png'
+import PinnLogo from '../Images/PinnLogo.png'
+import StaeLogo from '../Images/StaeLogo.png'
 
 export default () => (
   <div id="landing-page">
@@ -307,6 +309,19 @@ export default () => (
           companyName="Aspireship"
           companyBio="Training the next generation of SaaS sales professionals."
           link="https://aspireship.com/"
+        />
+        <PortfolioItem
+          logo={PinnLogo}
+          companyName="Pinn"
+          companyBio=""
+          link=""
+          hideLink={true}
+        />
+        <PortfolioItem
+          logo={StaeLogo}
+          companyName="Stae"
+          companyBio=""
+          link="https://stae.co/"
         />
         <PortfolioItem
           logo={WelloryLogo}
